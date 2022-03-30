@@ -13,6 +13,9 @@
 		B0F0F9F827F3342D00874BCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F0F9F627F3342D00874BCF /* Main.storyboard */; };
 		B0F0F9FA27F3342E00874BCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F0F9F927F3342E00874BCF /* Assets.xcassets */; };
 		B0F0F9FD27F3342E00874BCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F0F9FB27F3342E00874BCF /* LaunchScreen.storyboard */; };
+		B0F0FA0527F3350700874BCF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0FA0427F3350700874BCF /* LoginViewController.swift */; };
+		B0F0FA0827F337DD00874BCF /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0F0FA0727F337DD00874BCF /* NunitoSans-Bold.ttf */; };
+		B0F0FA0A27F337F200874BCF /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0F0FA0927F337F200874BCF /* NunitoSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B0F0F9F927F3342E00874BCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0F0F9FC27F3342E00874BCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0F0F9FE27F3342E00874BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0F0FA0427F3350700874BCF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B0F0FA0727F337DD00874BCF /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
+		B0F0FA0927F337F200874BCF /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		B0F0F9EF27F3342D00874BCF /* zwallet */ = {
 			isa = PBXGroup;
 			children = (
+				B0F0FA0627F337C000874BCF /* Font */,
 				B0F0F9F027F3342D00874BCF /* AppDelegate.swift */,
 				B0F0F9F227F3342D00874BCF /* SceneDelegate.swift */,
 				B0F0F9F427F3342D00874BCF /* ViewController.swift */,
@@ -63,8 +70,18 @@
 				B0F0F9F927F3342E00874BCF /* Assets.xcassets */,
 				B0F0F9FB27F3342E00874BCF /* LaunchScreen.storyboard */,
 				B0F0F9FE27F3342E00874BCF /* Info.plist */,
+				B0F0FA0427F3350700874BCF /* LoginViewController.swift */,
 			);
 			path = zwallet;
+			sourceTree = "<group>";
+		};
+		B0F0FA0627F337C000874BCF /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B0F0FA0927F337F200874BCF /* NunitoSans-Regular.ttf */,
+				B0F0FA0727F337DD00874BCF /* NunitoSans-Bold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +144,9 @@
 			files = (
 				B0F0F9FD27F3342E00874BCF /* LaunchScreen.storyboard in Resources */,
 				B0F0F9FA27F3342E00874BCF /* Assets.xcassets in Resources */,
+				B0F0FA0A27F337F200874BCF /* NunitoSans-Regular.ttf in Resources */,
 				B0F0F9F827F3342D00874BCF /* Main.storyboard in Resources */,
+				B0F0FA0827F337DD00874BCF /* NunitoSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F0FA0527F3350700874BCF /* LoginViewController.swift in Sources */,
 				B0F0F9F527F3342D00874BCF /* ViewController.swift in Sources */,
 				B0F0F9F127F3342D00874BCF /* AppDelegate.swift in Sources */,
 				B0F0F9F327F3342D00874BCF /* SceneDelegate.swift in Sources */,

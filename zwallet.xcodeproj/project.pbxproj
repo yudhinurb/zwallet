@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B01228BC27F43F41009D7F98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01228BB27F43F41009D7F98 /* LoginViewController.swift */; };
+		B01228BE27F43F9F009D7F98 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01228BD27F43F9F009D7F98 /* LoginView.xib */; };
 		B0F0F9F127F3342D00874BCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0F9F027F3342D00874BCF /* AppDelegate.swift */; };
 		B0F0F9F327F3342D00874BCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0F9F227F3342D00874BCF /* SceneDelegate.swift */; };
 		B0F0F9F527F3342D00874BCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0F9F427F3342D00874BCF /* ViewController.swift */; };
 		B0F0F9F827F3342D00874BCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F0F9F627F3342D00874BCF /* Main.storyboard */; };
 		B0F0F9FA27F3342E00874BCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F0F9F927F3342E00874BCF /* Assets.xcassets */; };
 		B0F0F9FD27F3342E00874BCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F0F9FB27F3342E00874BCF /* LaunchScreen.storyboard */; };
-		B0F0FA0527F3350700874BCF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0FA0427F3350700874BCF /* LoginViewController.swift */; };
+		B0F0FA0527F3350700874BCF /* LoginViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0FA0427F3350700874BCF /* LoginViewController2.swift */; };
 		B0F0FA0827F337DD00874BCF /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0F0FA0727F337DD00874BCF /* NunitoSans-Bold.ttf */; };
 		B0F0FA0A27F337F200874BCF /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0F0FA0927F337F200874BCF /* NunitoSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B01228BB27F43F41009D7F98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B01228BD27F43F9F009D7F98 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		B0F0F9ED27F3342D00874BCF /* zwallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zwallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F0F9F027F3342D00874BCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F0F9F227F3342D00874BCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +31,7 @@
 		B0F0F9F927F3342E00874BCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0F0F9FC27F3342E00874BCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0F0F9FE27F3342E00874BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0F0FA0427F3350700874BCF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B0F0FA0427F3350700874BCF /* LoginViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController2.swift; sourceTree = "<group>"; };
 		B0F0FA0727F337DD00874BCF /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
 		B0F0FA0927F337F200874BCF /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,6 +47,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B01228AF27F43089009D7F98 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				B01228B027F430CF009D7F98 /* LoginModule */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		B01228B027F430CF009D7F98 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				B01228B427F4316C009D7F98 /* View */,
+				B01228B327F43166009D7F98 /* Router */,
+				B01228B227F4315D009D7F98 /* Presenter */,
+				B01228B127F4314C009D7F98 /* Interactor */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		B01228B127F4314C009D7F98 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B01228B227F4315D009D7F98 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B01228B327F43166009D7F98 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B01228B427F4316C009D7F98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B01228BB27F43F41009D7F98 /* LoginViewController.swift */,
+				B01228BD27F43F9F009D7F98 /* LoginView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B0F0F9E427F3342D00874BCF = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +115,7 @@
 		B0F0F9EF27F3342D00874BCF /* zwallet */ = {
 			isa = PBXGroup;
 			children = (
+				B01228AF27F43089009D7F98 /* Module */,
 				B0F0FA0627F337C000874BCF /* Font */,
 				B0F0F9F027F3342D00874BCF /* AppDelegate.swift */,
 				B0F0F9F227F3342D00874BCF /* SceneDelegate.swift */,
@@ -70,7 +124,7 @@
 				B0F0F9F927F3342E00874BCF /* Assets.xcassets */,
 				B0F0F9FB27F3342E00874BCF /* LaunchScreen.storyboard */,
 				B0F0F9FE27F3342E00874BCF /* Info.plist */,
-				B0F0FA0427F3350700874BCF /* LoginViewController.swift */,
+				B0F0FA0427F3350700874BCF /* LoginViewController2.swift */,
 			);
 			path = zwallet;
 			sourceTree = "<group>";
@@ -144,6 +198,7 @@
 			files = (
 				B0F0F9FD27F3342E00874BCF /* LaunchScreen.storyboard in Resources */,
 				B0F0F9FA27F3342E00874BCF /* Assets.xcassets in Resources */,
+				B01228BE27F43F9F009D7F98 /* LoginView.xib in Resources */,
 				B0F0FA0A27F337F200874BCF /* NunitoSans-Regular.ttf in Resources */,
 				B0F0F9F827F3342D00874BCF /* Main.storyboard in Resources */,
 				B0F0FA0827F337DD00874BCF /* NunitoSans-Bold.ttf in Resources */,
@@ -157,9 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0F0FA0527F3350700874BCF /* LoginViewController.swift in Sources */,
+				B0F0FA0527F3350700874BCF /* LoginViewController2.swift in Sources */,
 				B0F0F9F527F3342D00874BCF /* ViewController.swift in Sources */,
 				B0F0F9F127F3342D00874BCF /* AppDelegate.swift in Sources */,
+				B01228BC27F43F41009D7F98 /* LoginViewController.swift in Sources */,
 				B0F0F9F327F3342D00874BCF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

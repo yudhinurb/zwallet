@@ -209,12 +209,12 @@ to access all the features in zWallet</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="forgotPasswordButton" destination="bpN-gt-2p4" id="vDG-Om-XiD"/>
-                        <outlet property="inputEmailField" destination="0Wf-BI-8kr" id="ntZ-aw-v8D"/>
-                        <outlet property="inputPasswordField" destination="Aru-2g-G3e" id="xli-Gq-9f0"/>
-                        <outlet property="loginButton" destination="rBC-J0-w1Q" id="gpl-Pn-uT0"/>
-                        <outlet property="loginDescLabel" destination="hUd-5T-GDr" id="QeA-WU-Niu"/>
-                        <outlet property="loginLabel" destination="FcG-Eg-qrm" id="HgW-vR-LJQ"/>
+                        <outlet property="forgotPasswordButton" destination="bpN-gt-2p4" id="eQR-to-ZNv"/>
+                        <outlet property="inputEmailField" destination="0Wf-BI-8kr" id="qPe-g3-kB7"/>
+                        <outlet property="inputPasswordField" destination="Aru-2g-G3e" id="Puz-g8-32n"/>
+                        <outlet property="loginButton" destination="rBC-J0-w1Q" id="wba-c8-Mty"/>
+                        <outlet property="loginDescLabel" destination="hUd-5T-GDr" id="tMo-bd-ffO"/>
+                        <outlet property="loginLabel" destination="FcG-Eg-qrm" id="dMI-Cw-o85"/>
                         <outlet property="zwalletLabel" destination="hug-cX-tAN" id="qmo-JF-igW"/>
                     </connections>
                 </viewController>

@@ -2,20 +2,19 @@
 //  LoginViewController.swift
 //  zwallet
 //
-//  Created by user217931 on 3/29/22.
+//  Created by user217931 on 3/30/22.
 //
 
 import UIKit
 
 class LoginViewController: UIViewController {
-
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var forgotPasswordButton: UIButton!
-    @IBOutlet weak var inputPasswordField: UITextField!
-    @IBOutlet weak var inputEmailField: UITextField!
-    @IBOutlet weak var loginDescLabel: UILabel!
-    @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var zwalletLabel: UILabel!
+    @IBOutlet weak var loginLabel: UILabel!
+    @IBOutlet weak var loginDescLabel: UILabel!
+    @IBOutlet weak var inputEmailField: UITextField!
+    @IBOutlet weak var inputPasswordField: UITextField!
+    @IBOutlet weak var forgotPasswordButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +39,6 @@ class LoginViewController: UIViewController {
         self.forgotPasswordButton.titleLabel?.textColor = UIColor(red: 0.228, green: 0.238, blue: 0.258, alpha: 1)
         
         self.loginButton.titleLabel?.font = NunitoFonts.nunitoBold(sizeOf: 18)
-        
     }
     
 
@@ -54,13 +52,4 @@ class LoginViewController: UIViewController {
     }
     */
 
-}
-
-enum NunitoFonts {
-    static func nunitoRegular(sizeOf size : CGFloat) -> UIFont?{
-        UIFont(name: "NunitoSans-Regular", size: size)
-    }
-    static func nunitoBold(sizeOf size : CGFloat) -> UIFont?{
-        UIFont(name: "NunitoSans-Bold", size: size)
-    }
 }

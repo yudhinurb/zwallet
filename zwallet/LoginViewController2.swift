@@ -55,12 +55,3 @@ class LoginViewController2: UIViewController {
     */
 
 }
-
-enum NunitoFonts {
-    static func nunitoRegular(sizeOf size : CGFloat) -> UIFont?{
-        UIFont(name: "NunitoSans-Regular", size: size)
-    }
-    static func nunitoBold(sizeOf size : CGFloat) -> UIFont?{
-        UIFont(name: "NunitoSans-Bold", size: size)
-    }
-}

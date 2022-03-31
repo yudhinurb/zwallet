@@ -10,7 +10,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="zwallet" customModuleProvider="target">
             <connections>
-                <outlet property="zwalletLabel" destination="kAZ-nM-AZG" id="xhx-d7-WLf"/>
+                <outlet property="forgotPasswordButton" destination="XKw-aD-TlL" id="n6t-Qb-4zm"/>
+                <outlet property="inputEmailField" destination="Whz-KL-LmF" id="sBM-6E-4uC"/>
+                <outlet property="inputPasswordField" destination="VmT-88-F86" id="oTx-br-XaE"/>
+                <outlet property="loginButton" destination="WcG-wl-CIN" id="wwS-Wz-hKs"/>
+                <outlet property="loginDescLabel" destination="ErN-bR-jnk" id="bhZ-XF-4Iz"/>
+                <outlet property="loginLabel" destination="BxT-04-VWl" id="MyW-FT-w82"/>
+                <outlet property="view" destination="4qb-Pk-7sC" id="tYs-Vo-dCI"/>
+                <outlet property="zwalletLabel" destination="kAZ-nM-AZG" id="la9-lY-NWu"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

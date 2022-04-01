@@ -116,8 +116,12 @@ extension LoginViewController: UITextFieldDelegate {
         } else if textField == inputPasswordField {
             if inputPasswordField.text == "" {
                 lockImage.image = UIImage(systemName: "lock" )
+                loginButton.backgroundColor = UIColor(named: "GrayButton")
+                loginButton.titleLabel?.textColor = UIColor(named: "GrayButtonLabel")
             } else {
                 lockImage.image = UIImage(systemName: "lock.fill" )
+                loginButton.backgroundColor = UIColor(named: "Primary")
+                loginButton.titleLabel?.textColor = UIColor(ciColor: .white)
             }
         }
     }

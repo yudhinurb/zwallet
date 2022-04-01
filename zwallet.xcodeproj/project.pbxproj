@@ -19,6 +19,13 @@
 		B0F0FA0527F3350700874BCF /* LoginViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0FA0427F3350700874BCF /* LoginViewController2.swift */; };
 		B0F0FA0827F337DD00874BCF /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0F0FA0727F337DD00874BCF /* NunitoSans-Bold.ttf */; };
 		B0F0FA0A27F337F200874BCF /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0F0FA0927F337F200874BCF /* NunitoSans-Regular.ttf */; };
+		B15B05BA27F6A6A600664F5B /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B05B927F6A6A600664F5B /* AuthAPI.swift */; };
+		B15B05BE27F6A93E00664F5B /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = B15B05BD27F6A93E00664F5B /* netfox */; };
+		B19FAE3727F6AB9200D294B0 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B19FAE3627F6AB9200D294B0 /* Moya */; };
+		B19FAE3A27F6AC2100D294B0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B19FAE3927F6AC2100D294B0 /* Kingfisher */; };
+		B19FAE3C27F6D26000D294B0 /* AuthNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAE3B27F6D26000D294B0 /* AuthNetworkManager.swift */; };
+		B19FAE3F27F6D39600D294B0 /* LoginDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAE3E27F6D39600D294B0 /* LoginDataResponse.swift */; };
+		B19FAE4127F6D69600D294B0 /* AuthNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAE4027F6D69600D294B0 /* AuthNetworkManagerImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,10 @@
 		B0F0FA0427F3350700874BCF /* LoginViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController2.swift; sourceTree = "<group>"; };
 		B0F0FA0727F337DD00874BCF /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
 		B0F0FA0927F337F200874BCF /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
+		B15B05B927F6A6A600664F5B /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		B19FAE3B27F6D26000D294B0 /* AuthNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManager.swift; sourceTree = "<group>"; };
+		B19FAE3E27F6D39600D294B0 /* LoginDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataResponse.swift; sourceTree = "<group>"; };
+		B19FAE4027F6D69600D294B0 /* AuthNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManagerImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19FAE3A27F6AC2100D294B0 /* Kingfisher in Frameworks */,
+				B19FAE3727F6AB9200D294B0 /* Moya in Frameworks */,
+				B15B05BE27F6A93E00664F5B /* netfox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +74,7 @@
 		B01228B027F430CF009D7F98 /* LoginModule */ = {
 			isa = PBXGroup;
 			children = (
+				B19FAE3D27F6D36200D294B0 /* Entity */,
 				B01228B427F4316C009D7F98 /* View */,
 				B01228B327F43166009D7F98 /* Router */,
 				B01228B227F4315D009D7F98 /* Presenter */,
@@ -104,6 +119,7 @@
 			children = (
 				B0F0F9EF27F3342D00874BCF /* zwallet */,
 				B0F0F9EE27F3342D00874BCF /* Products */,
+				B19FAE3527F6AB9200D294B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +134,8 @@
 		B0F0F9EF27F3342D00874BCF /* zwallet */ = {
 			isa = PBXGroup;
 			children = (
+				B15B05B627F6A64500664F5B /* Core */,
+				B15B05B527F6A63200664F5B /* Network */,
 				B01228AF27F43089009D7F98 /* Module */,
 				B0F0FA0627F337C000874BCF /* Font */,
 				B0F0F9F027F3342D00874BCF /* AppDelegate.swift */,
@@ -141,6 +159,38 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		B15B05B527F6A63200664F5B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B15B05B927F6A6A600664F5B /* AuthAPI.swift */,
+				B19FAE3B27F6D26000D294B0 /* AuthNetworkManager.swift */,
+				B19FAE4027F6D69600D294B0 /* AuthNetworkManagerImpl.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B15B05B627F6A64500664F5B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B19FAE3527F6AB9200D294B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B19FAE3D27F6D36200D294B0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B19FAE3E27F6D39600D294B0 /* LoginDataResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +207,11 @@
 			dependencies = (
 			);
 			name = zwallet;
+			packageProductDependencies = (
+				B15B05BD27F6A93E00664F5B /* netfox */,
+				B19FAE3627F6AB9200D294B0 /* Moya */,
+				B19FAE3927F6AC2100D294B0 /* Kingfisher */,
+			);
 			productName = zwallet;
 			productReference = B0F0F9ED27F3342D00874BCF /* zwallet.app */;
 			productType = "com.apple.product-type.application";
@@ -185,6 +240,11 @@
 				Base,
 			);
 			mainGroup = B0F0F9E427F3342D00874BCF;
+			packageReferences = (
+				B15B05BB27F6A79D00664F5B /* XCRemoteSwiftPackageReference "Moya" */,
+				B15B05BC27F6A93E00664F5B /* XCRemoteSwiftPackageReference "netfox" */,
+				B19FAE3827F6AC2100D294B0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = B0F0F9EE27F3342D00874BCF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -217,10 +277,14 @@
 			files = (
 				B088085427F55666009E35B8 /* LoginView.swift in Sources */,
 				B0F0FA0527F3350700874BCF /* LoginViewController2.swift in Sources */,
+				B19FAE4127F6D69600D294B0 /* AuthNetworkManagerImpl.swift in Sources */,
+				B19FAE3C27F6D26000D294B0 /* AuthNetworkManager.swift in Sources */,
 				B0F0F9F527F3342D00874BCF /* ViewController.swift in Sources */,
 				B0F0F9F127F3342D00874BCF /* AppDelegate.swift in Sources */,
+				B19FAE3F27F6D39600D294B0 /* LoginDataResponse.swift in Sources */,
 				B01228BC27F43F41009D7F98 /* LoginViewController.swift in Sources */,
 				B0F0F9F327F3342D00874BCF /* SceneDelegate.swift in Sources */,
+				B15B05BA27F6A6A600664F5B /* AuthAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +500,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B15B05BB27F6A79D00664F5B /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		B15B05BC27F6A93E00664F5B /* XCRemoteSwiftPackageReference "netfox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kasketis/netfox.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B19FAE3827F6AC2100D294B0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B15B05BD27F6A93E00664F5B /* netfox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B15B05BC27F6A93E00664F5B /* XCRemoteSwiftPackageReference "netfox" */;
+			productName = netfox;
+		};
+		B19FAE3627F6AB9200D294B0 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B15B05BB27F6A79D00664F5B /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		B19FAE3927F6AC2100D294B0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B19FAE3827F6AC2100D294B0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B0F0F9E527F3342D00874BCF /* Project object */;
 }

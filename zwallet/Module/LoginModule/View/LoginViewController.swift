@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailLineView: UIView!
     @IBOutlet weak var passwordLineView: UIView!
     @IBOutlet weak var eyeSlashButton: UIButton!
+    var presenter: LoginPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +48,7 @@ class LoginViewController: UIViewController {
         self.forgotPasswordButton.titleLabel?.font = NunitoFonts.nunitoRegular(sizeOf: 14)
         self.forgotPasswordButton.titleLabel?.textColor = UIColor(named: "Black")
 
-        self.loginButton.titleLabel?.font = NunitoFonts.nunitoBold(sizeOf: 18)
+//        self.loginButton.titleLabel?.font = NunitoFonts.nunitoBold(sizeOf: 18)
     }
     
     
@@ -61,6 +62,24 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func loginProses(_ sender: Any) {
+        let email: String = inputEmailField.text ?? ""
+        let password: String = inputPasswordField.text ?? ""
+        self.presenter?.login(email: email, password: password)
+    }
+    
+    
+    @IBAction func toRegisterButton(_ sender: Any) {
+        if let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "RegisterViewController"){
+            
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+        }
+        
+        
+     
+        
+    }
     @IBAction func eyeSlashButton(_ sender: UIButton) {
         if inputPasswordField.isSecureTextEntry {
             inputPasswordField.isSecureTextEntry = false
@@ -123,9 +142,9 @@ extension LoginViewController: UITextFieldDelegate {
     }
 }
 
-extension LoginViewController: LoginView{
+extension LoginViewController: LoginViewProtocol{
     func showSuccess() {
-        //N
+        //Nb
     }
     
     func showError() {

@@ -26,9 +26,6 @@ public class AuthNetworkManagerImpl: AuthNetworkManager{
                 }
             case .failure(let err):
                 completion(nil, err)
-            
         }}
     }
-    
-    
 }

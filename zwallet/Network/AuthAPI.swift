@@ -5,6 +5,7 @@
 //  Created by user217075 on 3/31/22.
 //
 
+
 import Foundation
 import Moya
 import UniformTypeIdentifiers
@@ -14,6 +15,13 @@ public enum AuthAPI{
 }
 
 extension AuthAPI: TargetType{
+    public var path: String{
+        switch self {
+        case .login:
+            return "/auth/login"
+        }
+    }
+    
     public var baseURL: URL {
         return URL(string: String(describing: "http://3.89.145.177:8000"))!
     }
@@ -37,13 +45,5 @@ extension AuthAPI: TargetType{
         return [
             "Content-Type": "application/json"
         ]
-    }
-    
-    
-    public var path: String{
-        switch self {
-        case .login(let email, let password):
-            return "/auth/login"
-        }
     }
 }

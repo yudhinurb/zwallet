@@ -8,7 +8,7 @@
 import Foundation
 import Moya
 import UniformTypeIdentifiers
-
+// ini budi
 public enum AuthAPI{
     case login(email: String, password: String)
 }

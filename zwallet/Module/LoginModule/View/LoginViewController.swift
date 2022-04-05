@@ -21,12 +21,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailLineView: UIView!
     @IBOutlet weak var passwordLineView: UIView!
     @IBOutlet weak var eyeSlashButton: UIButton!
+    @IBOutlet weak var errorMessage: UILabel!
+    
+    var presenter: LoginPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         inputEmailField.delegate = self
         inputPasswordField.delegate = self
+        errorMessage.text = ""
 
         // Do any additional setup after loading the view.
         self.zwalletLabel.font = UIFont(name: "NunitoSans-Bold", size: 26)
@@ -71,7 +75,14 @@ class LoginViewController: UIViewController {
         }
         
     }
-    
+    @IBAction func buttonLoginAction(_ sender: UIButton) {
+        let email: String = inputEmailField.text ?? ""
+        let password: String = inputPasswordField.text ?? ""
+        
+        self.presenter?.login(email: email, password: password)
+        print("pencet tombol login")
+
+    }
 }
 
 enum NunitoFonts {
@@ -80,6 +91,17 @@ enum NunitoFonts {
     }
     static func nunitoBold(sizeOf size : CGFloat) -> UIFont?{
         UIFont(name: "NunitoSans-Bold", size: size)
+    }
+}
+
+extension LoginViewController: LoginViewProtocol{
+    func showError() {
+        envelopeImage.image = UIImage(systemName: "envelope")?.withTintColor(.red, renderingMode: .alwaysOriginal)
+        emailLineView.backgroundColor = .red
+        lockImage.image = UIImage(systemName: "lock")?.withTintColor(.red, renderingMode: .alwaysOriginal)
+        passwordLineView.backgroundColor = .red
+        errorMessage.text = "Username atau password salah!"
+        errorMessage.textColor = .red
     }
 }
 
@@ -126,15 +148,4 @@ extension LoginViewController: UITextFieldDelegate {
         }
     }
 }
-
-extension LoginViewController: LoginView{
-    func showSuccess() {
-        //N
-    }
-    
-    func showError() {
-        // N
-    }
-}
-
 

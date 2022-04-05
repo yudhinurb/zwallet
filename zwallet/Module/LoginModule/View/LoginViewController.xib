@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="emailLineView" destination="XmU-qz-hnt" id="Hg4-si-4e9"/>
                 <outlet property="envelopeImage" destination="DeC-Oz-O3y" id="bqp-LF-son"/>
+                <outlet property="errorMessage" destination="ARI-mK-Zff" id="mcH-CQ-oco"/>
                 <outlet property="eyeSlashButton" destination="PHx-ae-y5A" id="dWW-G2-IZy"/>
                 <outlet property="forgotPasswordButton" destination="XKw-aD-TlL" id="n6t-Qb-4zm"/>
                 <outlet property="inputEmailField" destination="Whz-KL-LmF" id="sBM-6E-4uC"/>
@@ -148,7 +149,7 @@ to access all the features in zWallet</string>
                             <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcG-wl-CIN">
-                            <rect key="frame" x="8" y="509.5" width="398" height="50"/>
+                            <rect key="frame" x="8" y="516.5" width="398" height="50"/>
                             <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="2Qc-vJ-1KV"/>
@@ -156,6 +157,9 @@ to access all the features in zWallet</string>
                             <color key="tintColor" systemColor="secondaryLabelColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                            <connections>
+                                <action selector="buttonLoginAction:" destination="-1" eventType="touchUpInside" id="2v7-Yb-6ty"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKw-aD-TlL">
                             <rect key="frame" x="288.5" y="294" width="117.5" height="27.5"/>
@@ -166,16 +170,16 @@ to access all the features in zWallet</string>
                             </buttonConfiguration>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4Y-yf-IAt">
-                            <rect key="frame" x="8" y="569.5" width="398" height="28.5"/>
+                            <rect key="frame" x="8" y="576.5" width="398" height="21.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account? Let's" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xF6-7y-HdE">
-                                    <rect key="frame" x="0.0" y="0.0" width="278" height="28.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="278" height="21.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dD5-Fb-jFF">
-                                    <rect key="frame" x="278" y="0.0" width="120" height="28.5"/>
+                                    <rect key="frame" x="278" y="0.0" width="120" height="21.5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="120" id="xgo-hP-hVp"/>
                                     </constraints>
@@ -186,6 +190,15 @@ to access all the features in zWallet</string>
                                 </button>
                             </subviews>
                         </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARI-mK-Zff" userLabel="Error Message">
+                            <rect key="frame" x="8" y="451.5" width="398" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="oeQ-es-rac"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
@@ -193,6 +206,8 @@ to access all the features in zWallet</string>
                         <constraint firstAttribute="trailing" secondItem="XKw-aD-TlL" secondAttribute="trailing" constant="8" id="7nK-xb-dCt"/>
                         <constraint firstAttribute="trailing" secondItem="BxT-04-VWl" secondAttribute="trailing" constant="8" id="90M-CX-3Na"/>
                         <constraint firstItem="ErN-bR-jnk" firstAttribute="leading" secondItem="3El-6y-AXk" secondAttribute="leading" constant="20" id="9bE-sC-rDz"/>
+                        <constraint firstItem="ARI-mK-Zff" firstAttribute="leading" secondItem="3El-6y-AXk" secondAttribute="leading" constant="8" id="FMW-B9-1x2"/>
+                        <constraint firstItem="ARI-mK-Zff" firstAttribute="top" secondItem="XKw-aD-TlL" secondAttribute="bottom" constant="130" id="FdD-PT-Xlg"/>
                         <constraint firstAttribute="trailing" secondItem="v4Y-yf-IAt" secondAttribute="trailing" constant="8" id="G4Q-9b-0gh"/>
                         <constraint firstItem="k4p-YI-miy" firstAttribute="top" secondItem="GxH-Js-mCc" secondAttribute="bottom" constant="20" id="GQZ-DF-peW"/>
                         <constraint firstItem="GxH-Js-mCc" firstAttribute="top" secondItem="ErN-bR-jnk" secondAttribute="bottom" constant="40" id="Mjk-go-iHO"/>
@@ -204,8 +219,10 @@ to access all the features in zWallet</string>
                         <constraint firstItem="k4p-YI-miy" firstAttribute="leading" secondItem="3El-6y-AXk" secondAttribute="leading" constant="8" id="jr6-Su-Ogd"/>
                         <constraint firstAttribute="trailing" secondItem="GxH-Js-mCc" secondAttribute="trailing" constant="8" id="kI8-gw-k4H"/>
                         <constraint firstItem="BxT-04-VWl" firstAttribute="top" secondItem="3El-6y-AXk" secondAttribute="top" constant="40" id="llh-OL-8TO"/>
+                        <constraint firstItem="WcG-wl-CIN" firstAttribute="top" secondItem="ARI-mK-Zff" secondAttribute="bottom" constant="40" id="nRX-4j-5hI"/>
                         <constraint firstItem="WcG-wl-CIN" firstAttribute="leading" secondItem="3El-6y-AXk" secondAttribute="leading" constant="8" id="qQN-ut-xqi"/>
                         <constraint firstAttribute="trailing" secondItem="k4p-YI-miy" secondAttribute="trailing" constant="8" id="sgu-mv-JyC"/>
+                        <constraint firstAttribute="trailing" secondItem="ARI-mK-Zff" secondAttribute="trailing" constant="8" id="uaz-yr-6IW"/>
                         <constraint firstAttribute="trailing" secondItem="WcG-wl-CIN" secondAttribute="trailing" constant="8" id="y1G-dG-rgb"/>
                         <constraint firstAttribute="bottom" secondItem="v4Y-yf-IAt" secondAttribute="bottom" constant="20" id="yJh-U1-MgH"/>
                         <constraint firstItem="v4Y-yf-IAt" firstAttribute="top" secondItem="WcG-wl-CIN" secondAttribute="bottom" constant="10" id="ycY-F7-Ykk"/>

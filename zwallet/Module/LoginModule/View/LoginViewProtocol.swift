@@ -7,7 +7,6 @@
 
 import Foundation
 
-protocol LoginView {
+protocol LoginViewProtocol {
     func showError()
-    func showSuccess()
 }

@@ -37,6 +37,4 @@ extension LoginPresenterImpl: LoginInteractorOutputProtocol{
             self.view.showError()
         }
     }
-    
-    
 }

@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		1279EAF427FD79D20037C8A7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279EAF227FD79D20037C8A7 /* RegisterViewController.swift */; };
 		1279EAF527FD79D20037C8A7 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1279EAF327FD79D20037C8A7 /* RegisterViewController.xib */; };
+		12E9CEAB27FDA69300247CEC /* RegisterRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9CEAA27FDA69300247CEC /* RegisterRouterImpl.swift */; };
+		12E9CEAD27FDA6AC00247CEC /* RegisterRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9CEAC27FDA6AC00247CEC /* RegisterRouterProtocol.swift */; };
+		12E9CEAF27FDA9B000247CEC /* RegisterInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9CEAE27FDA9B000247CEC /* RegisterInteractorProtocol.swift */; };
+		12E9CEB127FDA9C600247CEC /* RegisterInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9CEB027FDA9C600247CEC /* RegisterInteractorImpl.swift */; };
+		12E9CEB327FDAB2500247CEC /* RegisterInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9CEB227FDAB2500247CEC /* RegisterInteractorOutput.swift */; };
+		12E9CEB527FDAD7500247CEC /* RegisterPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9CEB427FDAD7500247CEC /* RegisterPresenterProtocol.swift */; };
+		12E9CEB727FDAD8900247CEC /* RegisterPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9CEB627FDAD8900247CEC /* RegisterPresenterImpl.swift */; };
+		12E9CEB927FDAED300247CEC /* RegisterViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9CEB827FDAED300247CEC /* RegisterViewProtocol.swift */; };
 		B00DA4A327F6AB7D00256682 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B00DA4A227F6AB7D00256682 /* Moya */; };
 		B00DA4A527F6D24200256682 /* AuthNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DA4A427F6D24200256682 /* AuthNetworkManager.swift */; };
 		B00DA4A827F6D37E00256682 /* LoginDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DA4A727F6D37E00256682 /* LoginDataResponse.swift */; };
@@ -42,6 +50,14 @@
 /* Begin PBXFileReference section */
 		1279EAF227FD79D20037C8A7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1279EAF327FD79D20037C8A7 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		12E9CEAA27FDA69300247CEC /* RegisterRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouterImpl.swift; sourceTree = "<group>"; };
+		12E9CEAC27FDA6AC00247CEC /* RegisterRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouterProtocol.swift; sourceTree = "<group>"; };
+		12E9CEAE27FDA9B000247CEC /* RegisterInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractorProtocol.swift; sourceTree = "<group>"; };
+		12E9CEB027FDA9C600247CEC /* RegisterInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractorImpl.swift; sourceTree = "<group>"; };
+		12E9CEB227FDAB2500247CEC /* RegisterInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractorOutput.swift; sourceTree = "<group>"; };
+		12E9CEB427FDAD7500247CEC /* RegisterPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenterProtocol.swift; sourceTree = "<group>"; };
+		12E9CEB627FDAD8900247CEC /* RegisterPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenterImpl.swift; sourceTree = "<group>"; };
+		12E9CEB827FDAED300247CEC /* RegisterViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewProtocol.swift; sourceTree = "<group>"; };
 		B00DA4A427F6D24200256682 /* AuthNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManager.swift; sourceTree = "<group>"; };
 		B00DA4A727F6D37E00256682 /* LoginDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataResponse.swift; sourceTree = "<group>"; };
 		B00DA4A927F6D63F00256682 /* AuthNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManagerImpl.swift; sourceTree = "<group>"; };
@@ -88,6 +104,10 @@
 		1279EAF027FD79A80037C8A7 /* RegisterModule */ = {
 			isa = PBXGroup;
 			children = (
+				12E9CEA927FD9D9600247CEC /* Router */,
+				12E9CEA827FD9D8C00247CEC /* Entity */,
+				12E9CEA727FD9D8100247CEC /* Presenter */,
+				12E9CEA627FD9D6800247CEC /* Interactor */,
 				1279EAF127FD79B60037C8A7 /* View */,
 			);
 			path = RegisterModule;
@@ -98,8 +118,44 @@
 			children = (
 				1279EAF227FD79D20037C8A7 /* RegisterViewController.swift */,
 				1279EAF327FD79D20037C8A7 /* RegisterViewController.xib */,
+				12E9CEB827FDAED300247CEC /* RegisterViewProtocol.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		12E9CEA627FD9D6800247CEC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				12E9CEAE27FDA9B000247CEC /* RegisterInteractorProtocol.swift */,
+				12E9CEB027FDA9C600247CEC /* RegisterInteractorImpl.swift */,
+				12E9CEB227FDAB2500247CEC /* RegisterInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		12E9CEA727FD9D8100247CEC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				12E9CEB427FDAD7500247CEC /* RegisterPresenterProtocol.swift */,
+				12E9CEB627FDAD8900247CEC /* RegisterPresenterImpl.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		12E9CEA827FD9D8C00247CEC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		12E9CEA927FD9D9600247CEC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				12E9CEAA27FDA69300247CEC /* RegisterRouterImpl.swift */,
+				12E9CEAC27FDA6AC00247CEC /* RegisterRouterProtocol.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		B00DA4A127F6AB7D00256682 /* Frameworks */ = {
@@ -324,23 +380,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E9CEB927FDAED300247CEC /* RegisterViewProtocol.swift in Sources */,
 				B0BA5C1127F6A690005DAC02 /* AuthApi.swift in Sources */,
 				B088085427F55666009E35B8 /* LoginViewProtocol.swift in Sources */,
 				B02C583C27FAD2B100C9EA0B /* AppRouter.swift in Sources */,
 				B01E55C227F96C0500949205 /* LoginRouterImpl.swift in Sources */,
 				B01E55B827F952C300949205 /* LoginPresenterImpl.swift in Sources */,
+				12E9CEB727FDAD8900247CEC /* RegisterPresenterImpl.swift in Sources */,
 				B00DA4AA27F6D63F00256682 /* AuthNetworkManagerImpl.swift in Sources */,
 				B01E55BE27F9597B00949205 /* LoginInteractorOutputProtocol.swift in Sources */,
 				B00DA4A527F6D24200256682 /* AuthNetworkManager.swift in Sources */,
+				12E9CEB127FDA9C600247CEC /* RegisterInteractorImpl.swift in Sources */,
 				B01E55B627F9523B00949205 /* LoginPresenterProtocol.swift in Sources */,
 				1279EAF427FD79D20037C8A7 /* RegisterViewController.swift in Sources */,
 				B0F0FA0527F3350700874BCF /* LoginViewController2.swift in Sources */,
 				B0F0F9F527F3342D00874BCF /* ViewController.swift in Sources */,
+				12E9CEB527FDAD7500247CEC /* RegisterPresenterProtocol.swift in Sources */,
 				B02C583E27FAD56600C9EA0B /* AppConstant.swift in Sources */,
 				B0C62DF327F9F23A00B1732D /* UserDefaultHelper.swift in Sources */,
 				B00DA4A827F6D37E00256682 /* LoginDataResponse.swift in Sources */,
+				12E9CEAD27FDA6AC00247CEC /* RegisterRouterProtocol.swift in Sources */,
 				B01E55C027F95CD200949205 /* LoginInteractorImpl.swift in Sources */,
 				B0F0F9F127F3342D00874BCF /* AppDelegate.swift in Sources */,
+				12E9CEAF27FDA9B000247CEC /* RegisterInteractorProtocol.swift in Sources */,
+				12E9CEB327FDAB2500247CEC /* RegisterInteractorOutput.swift in Sources */,
+				12E9CEAB27FDA69300247CEC /* RegisterRouterImpl.swift in Sources */,
 				B01228BC27F43F41009D7F98 /* LoginViewController.swift in Sources */,
 				B0F0F9F327F3342D00874BCF /* SceneDelegate.swift in Sources */,
 				B01E55BC27F953D800949205 /* LoginRouterProtocol.swift in Sources */,

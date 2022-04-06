@@ -8,8 +8,24 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+    
+    var presenter: RegisterPresenterProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func signUpButtonAction(_ sender: Any) {
+    }
+    
+    @IBAction func signInButtonAction(_ sender: Any) {
+    }
+}
+
+extension RegisterViewController: RegisterViewProtocol {
+    func loginPage() {
+        
     }
 }

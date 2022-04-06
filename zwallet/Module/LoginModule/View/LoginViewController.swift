@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordLineView: UIView!
     @IBOutlet weak var eyeSlashButton: UIButton!
     @IBOutlet weak var errorMessage: UILabel!
+    @IBOutlet weak var signUpButton: UIButton!
     
     var presenter: LoginPresenterProtocol?
     
@@ -82,6 +83,11 @@ class LoginViewController: UIViewController {
         self.presenter?.login(email: email, password: password)
         print("pencet tombol login")
 
+    }
+    
+    @IBAction func buttonSignUpAction(_ sender: Any) {
+        self.presenter?.registerPage(viewController: self)
+        print("Pencet SignUp")
     }
 }
 

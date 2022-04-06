@@ -12,19 +12,28 @@ import UIKit
 public class AppRouter {
 
     public static let shared: AppRouter = AppRouter()
-
+    
+    //Login Scene
     public var loginScene: (() -> ())? = nil
 
     public func navigateToLogin() {
         self.loginScene?()
     }
+    
+    //Register Scene
+    public var registerScene: (() -> ())? = nil
+    public func navigateToRegister() {
+        self.registerScene?()
+    }
 
+    //Home Scene
     public var homeScene: (() -> ())? = nil
 
     public func navigateToHome() {
         self.homeScene?()
     }
 
+    //History Scene
     public var historyScene: ((_ viewController: UIViewController) -> ())? = nil
 
     public func navigateToHistory(_ viewController: UIViewController) {

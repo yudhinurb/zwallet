@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1279EAF427FD79D20037C8A7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279EAF227FD79D20037C8A7 /* RegisterViewController.swift */; };
+		1279EAF527FD79D20037C8A7 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1279EAF327FD79D20037C8A7 /* RegisterViewController.xib */; };
 		B00DA4A327F6AB7D00256682 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B00DA4A227F6AB7D00256682 /* Moya */; };
 		B00DA4A527F6D24200256682 /* AuthNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DA4A427F6D24200256682 /* AuthNetworkManager.swift */; };
 		B00DA4A827F6D37E00256682 /* LoginDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DA4A727F6D37E00256682 /* LoginDataResponse.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1279EAF227FD79D20037C8A7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1279EAF327FD79D20037C8A7 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		B00DA4A427F6D24200256682 /* AuthNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManager.swift; sourceTree = "<group>"; };
 		B00DA4A727F6D37E00256682 /* LoginDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataResponse.swift; sourceTree = "<group>"; };
 		B00DA4A927F6D63F00256682 /* AuthNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManagerImpl.swift; sourceTree = "<group>"; };
@@ -81,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1279EAF027FD79A80037C8A7 /* RegisterModule */ = {
+			isa = PBXGroup;
+			children = (
+				1279EAF127FD79B60037C8A7 /* View */,
+			);
+			path = RegisterModule;
+			sourceTree = "<group>";
+		};
+		1279EAF127FD79B60037C8A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1279EAF227FD79D20037C8A7 /* RegisterViewController.swift */,
+				1279EAF327FD79D20037C8A7 /* RegisterViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B00DA4A127F6AB7D00256682 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +120,7 @@
 		B01228AF27F43089009D7F98 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				1279EAF027FD79A80037C8A7 /* RegisterModule */,
 				B01228B027F430CF009D7F98 /* LoginModule */,
 			);
 			path = Module;
@@ -287,6 +309,7 @@
 			files = (
 				B0F0F9FD27F3342E00874BCF /* LaunchScreen.storyboard in Resources */,
 				B0F0F9FA27F3342E00874BCF /* Assets.xcassets in Resources */,
+				1279EAF527FD79D20037C8A7 /* RegisterViewController.xib in Resources */,
 				B01228BE27F43F9F009D7F98 /* LoginViewController.xib in Resources */,
 				B0F0FA0A27F337F200874BCF /* NunitoSans-Regular.ttf in Resources */,
 				B0F0F9F827F3342D00874BCF /* Main.storyboard in Resources */,
@@ -310,6 +333,7 @@
 				B01E55BE27F9597B00949205 /* LoginInteractorOutputProtocol.swift in Sources */,
 				B00DA4A527F6D24200256682 /* AuthNetworkManager.swift in Sources */,
 				B01E55B627F9523B00949205 /* LoginPresenterProtocol.swift in Sources */,
+				1279EAF427FD79D20037C8A7 /* RegisterViewController.swift in Sources */,
 				B0F0FA0527F3350700874BCF /* LoginViewController2.swift in Sources */,
 				B0F0F9F527F3342D00874BCF /* ViewController.swift in Sources */,
 				B02C583E27FAD56600C9EA0B /* AppConstant.swift in Sources */,

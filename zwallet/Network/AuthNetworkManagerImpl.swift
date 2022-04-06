@@ -29,4 +29,21 @@ public class AuthNetworkManagerImpl: AuthNetworkManager{
             }
         }
     }
+    
+    public func register(username: String, email: String, password: String, completion: @escaping (RegisterResponse?, Error?) -> ()) {
+        let provider = MoyaProvider<AuthApi>()
+        provider.request(.register(username: username, email: email, password: password)) { result in switch result {
+            case .success(let res):
+                let decoder = JSONDecoder()
+                do {
+                    let responseRegister = try decoder.decode(RegisterResponse.self, from: res.data)
+                    completion(responseRegister, nil)
+                } catch {
+                    completion(nil, error)
+                }
+            case .failure(let err):
+                completion(nil, err)
+            }
+        }
+    }
 }

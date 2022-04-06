@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="zwallet" customModuleProvider="target">
             <connections>
+                <outlet property="inputEmail" destination="Hp3-NZ-NKX" id="WVW-IH-fY9"/>
+                <outlet property="inputPassword" destination="7Kf-N1-2ir" id="Uku-w5-Pz3"/>
+                <outlet property="inputUsername" destination="gqH-jA-KCa" id="NWT-aa-jOB"/>
                 <outlet property="signInButton" destination="Ltu-E9-VEI" id="B3T-Yh-YVy"/>
                 <outlet property="signUpButton" destination="9yy-vq-mvf" id="dcd-HK-d2j"/>
                 <outlet property="view" destination="oMM-0t-Tgy" id="9Lo-qU-T31"/>

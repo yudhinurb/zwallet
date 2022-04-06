@@ -21,7 +21,7 @@ class RegisterPresenterImpl: RegisterPresenterProtocol {
     }
     
     func register(username: String, email: String, password: String) {
-        
+        self.interactor.postRegisterData(username: username, email: email, password: password)
     }
     
     func loginPage(viewController: UIViewController) {

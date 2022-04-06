@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12632F5727FDEF4000CBDC9F /* RegisterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12632F5627FDEF4000CBDC9F /* RegisterEntity.swift */; };
 		1279EAF427FD79D20037C8A7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279EAF227FD79D20037C8A7 /* RegisterViewController.swift */; };
 		1279EAF527FD79D20037C8A7 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1279EAF327FD79D20037C8A7 /* RegisterViewController.xib */; };
 		12E9CEAB27FDA69300247CEC /* RegisterRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9CEAA27FDA69300247CEC /* RegisterRouterImpl.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12632F5627FDEF4000CBDC9F /* RegisterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEntity.swift; sourceTree = "<group>"; };
 		1279EAF227FD79D20037C8A7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1279EAF327FD79D20037C8A7 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		12E9CEAA27FDA69300247CEC /* RegisterRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouterImpl.swift; sourceTree = "<group>"; };
@@ -101,11 +103,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12632F5327FDEC9500CBDC9F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				12632F5627FDEF4000CBDC9F /* RegisterEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		1279EAF027FD79A80037C8A7 /* RegisterModule */ = {
 			isa = PBXGroup;
 			children = (
+				12632F5327FDEC9500CBDC9F /* Entity */,
 				12E9CEA927FD9D9600247CEC /* Router */,
-				12E9CEA827FD9D8C00247CEC /* Entity */,
 				12E9CEA727FD9D8100247CEC /* Presenter */,
 				12E9CEA627FD9D6800247CEC /* Interactor */,
 				1279EAF127FD79B60037C8A7 /* View */,
@@ -140,13 +150,6 @@
 				12E9CEB627FDAD8900247CEC /* RegisterPresenterImpl.swift */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		12E9CEA827FD9D8C00247CEC /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		12E9CEA927FD9D9600247CEC /* Router */ = {
@@ -391,6 +394,7 @@
 				B01E55BE27F9597B00949205 /* LoginInteractorOutputProtocol.swift in Sources */,
 				B00DA4A527F6D24200256682 /* AuthNetworkManager.swift in Sources */,
 				12E9CEB127FDA9C600247CEC /* RegisterInteractorImpl.swift in Sources */,
+				12632F5727FDEF4000CBDC9F /* RegisterEntity.swift in Sources */,
 				B01E55B627F9523B00949205 /* LoginPresenterProtocol.swift in Sources */,
 				1279EAF427FD79D20037C8A7 /* RegisterViewController.swift in Sources */,
 				B0F0FA0527F3350700874BCF /* LoginViewController2.swift in Sources */,

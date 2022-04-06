@@ -33,7 +33,7 @@ public class HomeRouterImpl {
 extension HomeRouterImpl: HomeRouter {
 
     func navigateToHistory(viewController: UIViewController) {
-//        HistoryRouterImpl.navigateToModule(viewController: viewController)
+        HistoryRouterImpl.navigateToModule(viewController: viewController)
     }
 
     func navigateToLogin() {

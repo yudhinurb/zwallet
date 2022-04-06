@@ -23,6 +23,19 @@
 		B02C583A27FAC0C900C9EA0B /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = B02C583927FAC0C900C9EA0B /* netfox */; };
 		B02C583C27FAD2B100C9EA0B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C583B27FAD2B100C9EA0B /* AppRouter.swift */; };
 		B02C583E27FAD56600C9EA0B /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C583D27FAD56600C9EA0B /* AppConstant.swift */; };
+		B04F663827FDDE5800825DE8 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F663627FDDE5800825DE8 /* HeaderCell.swift */; };
+		B04F663927FDDE5800825DE8 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04F663727FDDE5800825DE8 /* HeaderCell.xib */; };
+		B04F663C27FDDEEF00825DE8 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F663A27FDDEEF00825DE8 /* HistoryViewController.swift */; };
+		B04F663D27FDDEEF00825DE8 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04F663B27FDDEEF00825DE8 /* HistoryViewController.xib */; };
+		B04F663F27FDE01000825DE8 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F663E27FDE01000825DE8 /* HistoryView.swift */; };
+		B04F664127FDE03000825DE8 /* HistoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F664027FDE03000825DE8 /* HistoryDataSource.swift */; };
+		B04F664427FDE06900825DE8 /* HistoryPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F664327FDE06900825DE8 /* HistoryPresenterImpl.swift */; };
+		B04F664627FDE07900825DE8 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F664527FDE07900825DE8 /* HistoryPresenter.swift */; };
+		B04F664927FDE0C100825DE8 /* HistoryInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F664827FDE0C100825DE8 /* HistoryInteractorImpl.swift */; };
+		B04F664B27FDE0D900825DE8 /* HistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F664A27FDE0D900825DE8 /* HistoryInteractor.swift */; };
+		B04F664D27FDE10200825DE8 /* HistoryInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F664C27FDE10200825DE8 /* HistoryInteractorOutput.swift */; };
+		B04F665027FDE15F00825DE8 /* HistoryRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F664F27FDE15F00825DE8 /* HistoryRouterImpl.swift */; };
+		B04F665227FDE17100825DE8 /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F665127FDE17100825DE8 /* HistoryRouter.swift */; };
 		B088085427F55666009E35B8 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B088085327F55666009E35B8 /* LoginViewProtocol.swift */; };
 		B0BA5C1127F6A690005DAC02 /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA5C1027F6A690005DAC02 /* AuthApi.swift */; };
 		B0C62DF327F9F23A00B1732D /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C62DF227F9F23A00B1732D /* UserDefaultHelper.swift */; };
@@ -83,6 +96,19 @@
 		B01E55C127F96C0500949205 /* LoginRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterImpl.swift; sourceTree = "<group>"; };
 		B02C583B27FAD2B100C9EA0B /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		B02C583D27FAD56600C9EA0B /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		B04F663627FDDE5800825DE8 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		B04F663727FDDE5800825DE8 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		B04F663A27FDDEEF00825DE8 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		B04F663B27FDDEEF00825DE8 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		B04F663E27FDE01000825DE8 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		B04F664027FDE03000825DE8 /* HistoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDataSource.swift; sourceTree = "<group>"; };
+		B04F664327FDE06900825DE8 /* HistoryPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenterImpl.swift; sourceTree = "<group>"; };
+		B04F664527FDE07900825DE8 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		B04F664827FDE0C100825DE8 /* HistoryInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInteractorImpl.swift; sourceTree = "<group>"; };
+		B04F664A27FDE0D900825DE8 /* HistoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInteractor.swift; sourceTree = "<group>"; };
+		B04F664C27FDE10200825DE8 /* HistoryInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInteractorOutput.swift; sourceTree = "<group>"; };
+		B04F664F27FDE15F00825DE8 /* HistoryRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouterImpl.swift; sourceTree = "<group>"; };
+		B04F665127FDE17100825DE8 /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
 		B088085327F55666009E35B8 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
 		B0BA5C1027F6A690005DAC02 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
 		B0C62DF227F9F23A00B1732D /* UserDefaultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
@@ -161,6 +187,7 @@
 		B01228AF27F43089009D7F98 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				B04F663227FDDDA800825DE8 /* HistoryModule */,
 				B0F4E5A227FDBDF50053CE3B /* HomeModule */,
 				B01228B027F430CF009D7F98 /* LoginModule */,
 			);
@@ -215,6 +242,74 @@
 				B088085327F55666009E35B8 /* LoginViewProtocol.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B04F663227FDDDA800825DE8 /* HistoryModule */ = {
+			isa = PBXGroup;
+			children = (
+				B04F664E27FDE13C00825DE8 /* Router */,
+				B04F664727FDE08E00825DE8 /* Interactor */,
+				B04F664227FDE05200825DE8 /* Presenter */,
+				B04F663327FDDDF300825DE8 /* View */,
+			);
+			path = HistoryModule;
+			sourceTree = "<group>";
+		};
+		B04F663327FDDDF300825DE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B04F663527FDDE0400825DE8 /* ViewController */,
+				B04F663427FDDDFC00825DE8 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B04F663427FDDDFC00825DE8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B04F663627FDDE5800825DE8 /* HeaderCell.swift */,
+				B04F663727FDDE5800825DE8 /* HeaderCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B04F663527FDDE0400825DE8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B04F663A27FDDEEF00825DE8 /* HistoryViewController.swift */,
+				B04F663B27FDDEEF00825DE8 /* HistoryViewController.xib */,
+				B04F663E27FDE01000825DE8 /* HistoryView.swift */,
+				B04F664027FDE03000825DE8 /* HistoryDataSource.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B04F664227FDE05200825DE8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B04F664327FDE06900825DE8 /* HistoryPresenterImpl.swift */,
+				B04F664527FDE07900825DE8 /* HistoryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B04F664727FDE08E00825DE8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B04F664827FDE0C100825DE8 /* HistoryInteractorImpl.swift */,
+				B04F664A27FDE0D900825DE8 /* HistoryInteractor.swift */,
+				B04F664C27FDE10200825DE8 /* HistoryInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B04F664E27FDE13C00825DE8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B04F664F27FDE15F00825DE8 /* HistoryRouterImpl.swift */,
+				B04F665127FDE17100825DE8 /* HistoryRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		B0BA5C0F27F6A601005DAC02 /* Network */ = {
@@ -523,10 +618,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04F663927FDDE5800825DE8 /* HeaderCell.xib in Resources */,
 				B0F0F9FD27F3342E00874BCF /* LaunchScreen.storyboard in Resources */,
 				B0F0F9FA27F3342E00874BCF /* Assets.xcassets in Resources */,
 				B0D2D3C227FDCF910048761D /* TransactionCell.xib in Resources */,
 				B01228BE27F43F9F009D7F98 /* LoginViewController.xib in Resources */,
+				B04F663D27FDDEEF00825DE8 /* HistoryViewController.xib in Resources */,
 				B0F0FA0A27F337F200874BCF /* NunitoSans-Regular.ttf in Resources */,
 				B0F4E5C327FDC4080053CE3B /* DashboardCell.xib in Resources */,
 				B0F0F9F827F3342D00874BCF /* Main.storyboard in Resources */,
@@ -546,8 +643,13 @@
 				B0D2D3C827FDD0BA0048761D /* IntExtension.swift in Sources */,
 				B0BA5C1127F6A690005DAC02 /* AuthApi.swift in Sources */,
 				B088085427F55666009E35B8 /* LoginViewProtocol.swift in Sources */,
+				B04F663827FDDE5800825DE8 /* HeaderCell.swift in Sources */,
+				B04F663C27FDDEEF00825DE8 /* HistoryViewController.swift in Sources */,
 				B0F4E5B127FDBF760053CE3B /* HomeInteractorOutput.swift in Sources */,
+				B04F663F27FDE01000825DE8 /* HistoryView.swift in Sources */,
 				B0F4E5E827FDCCE90053CE3B /* InvoiceNetworkManagerImpl.swift in Sources */,
+				B04F664427FDE06900825DE8 /* HistoryPresenterImpl.swift in Sources */,
+				B04F664127FDE03000825DE8 /* HistoryDataSource.swift in Sources */,
 				B0D2D3CA27FDD0F80048761D /* UIViewExtension.swift in Sources */,
 				B0F4E5C727FDC5940053CE3B /* HomeDataSource.swift in Sources */,
 				B02C583C27FAD2B100C9EA0B /* AppRouter.swift in Sources */,
@@ -556,9 +658,11 @@
 				B01E55B827F952C300949205 /* LoginPresenterImpl.swift in Sources */,
 				B0F4E5B627FDBFDE0053CE3B /* HomePresenter.swift in Sources */,
 				B0F4E5E627FDCCD40053CE3B /* InvoiceNetworkManager.swift in Sources */,
+				B04F665227FDE17100825DE8 /* HistoryRouter.swift in Sources */,
 				B0F4E5DC27FDCB720053CE3B /* GetBalanceResponse.swift in Sources */,
 				B0F4E5BB27FDC04B0053CE3B /* DashboardCellDelegate.swift in Sources */,
 				B0F4E5D727FDCAFD0053CE3B /* BalanceNetworkManagerImpl.swift in Sources */,
+				B04F664B27FDE0D900825DE8 /* HistoryInteractor.swift in Sources */,
 				B0F4E5AF27FDBF490053CE3B /* HomeInteractorImpl.swift in Sources */,
 				B0F4E5E027FDCC9D0053CE3B /* GetInvoiceDataResponse.swift in Sources */,
 				B0F4E5E227FDCCB30053CE3B /* GetInvoiceResponse.swift in Sources */,
@@ -566,6 +670,7 @@
 				B00DA4AA27F6D63F00256682 /* AuthNetworkManagerImpl.swift in Sources */,
 				B0F4E5D327FDCA9D0053CE3B /* BalanceApi.swift in Sources */,
 				B01E55BE27F9597B00949205 /* LoginInteractorOutputProtocol.swift in Sources */,
+				B04F664D27FDE10200825DE8 /* HistoryInteractorOutput.swift in Sources */,
 				B0F4E5DA27FDCB5C0053CE3B /* GetBalanceDataResponse.swift in Sources */,
 				B0D2D3C127FDCF910048761D /* TransactionCell.swift in Sources */,
 				B0F4E5AA27FDBED20053CE3B /* UserProfileEntity.swift in Sources */,
@@ -574,6 +679,7 @@
 				B0F4E5C527FDC5620053CE3B /* HomeView.swift in Sources */,
 				B0F4E5E427FDCCC50053CE3B /* InvoiceApi.swift in Sources */,
 				B0F4E5A727FDBE830053CE3B /* HomeRouterImpl.swift in Sources */,
+				B04F664927FDE0C100825DE8 /* HistoryInteractorImpl.swift in Sources */,
 				B0D2D3BC27FDCEFE0048761D /* TransactionEntity.swift in Sources */,
 				B0F0FA0527F3350700874BCF /* LoginViewController2.swift in Sources */,
 				B0F0F9F527F3342D00874BCF /* ViewController.swift in Sources */,
@@ -587,6 +693,8 @@
 				B0F0F9F327F3342D00874BCF /* SceneDelegate.swift in Sources */,
 				B0F4E5CE27FDC7680053CE3B /* HomeViewController.swift in Sources */,
 				B01E55BC27F953D800949205 /* LoginRouterProtocol.swift in Sources */,
+				B04F665027FDE15F00825DE8 /* HistoryRouterImpl.swift in Sources */,
+				B04F664627FDE07900825DE8 /* HistoryPresenter.swift in Sources */,
 				B0F4E5B427FDBFBC0053CE3B /* HomePresenterImpl.swift in Sources */,
 				B01E55BA27F953BF00949205 /* LoginInteractorProtocol.swift in Sources */,
 			);

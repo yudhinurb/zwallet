@@ -23,4 +23,8 @@ class RegisterPresenterImpl: RegisterPresenterProtocol {
     func register(username: String, email: String, password: String) {
         
     }
+    
+    func loginPage(viewController: UIViewController) {
+        self.router.navigateToLogin(viewController: viewController)
+    }
 }

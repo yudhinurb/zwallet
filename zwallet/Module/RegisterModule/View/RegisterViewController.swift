@@ -21,11 +21,10 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func signInButtonAction(_ sender: Any) {
+        self.presenter?.loginPage(viewController: self)
     }
 }
 
 extension RegisterViewController: RegisterViewProtocol {
-    func loginPage() {
-        
-    }
+    
 }

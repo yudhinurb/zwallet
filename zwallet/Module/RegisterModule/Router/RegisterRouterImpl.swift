@@ -26,7 +26,7 @@ class RegisterRouterImpl {
 }
 
 extension RegisterRouterImpl: RegisterRouterProtocol {
-    func navigateToRegister(viewController: UIViewController) {
-        
+    func navigateToLogin(viewController: UIViewController) {
+        LoginRouterImpl.navigateToModule()
     }
 }

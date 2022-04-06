@@ -7,15 +7,29 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="zwallet" customModuleProvider="target">
             <connections>
+                <outlet property="emailImage" destination="g7T-uM-CeH" id="efh-lk-fZZ"/>
+                <outlet property="emailUnderline" destination="Fb5-3p-THa" id="d26-bX-037"/>
+                <outlet property="eyeSlashButton" destination="AZr-I3-NV3" id="WZw-3E-GQB"/>
                 <outlet property="inputEmail" destination="Hp3-NZ-NKX" id="WVW-IH-fY9"/>
                 <outlet property="inputPassword" destination="7Kf-N1-2ir" id="Uku-w5-Pz3"/>
                 <outlet property="inputUsername" destination="gqH-jA-KCa" id="NWT-aa-jOB"/>
+                <outlet property="passwordImage" destination="6Wn-1G-R8K" id="ZhK-w6-06D"/>
+                <outlet property="passwordUnderline" destination="cnU-rd-xSH" id="LLw-gy-15g"/>
                 <outlet property="signInButton" destination="Ltu-E9-VEI" id="B3T-Yh-YVy"/>
                 <outlet property="signUpButton" destination="9yy-vq-mvf" id="dcd-HK-d2j"/>
+                <outlet property="signUpDescLabel" destination="PaR-kb-si9" id="kNw-6A-za6"/>
+                <outlet property="usernameImage" destination="Yb1-p5-Wim" id="ij2-Yn-Mku"/>
+                <outlet property="usernameUnderline" destination="pc7-nu-2gY" id="Pb1-iX-iGr"/>
                 <outlet property="view" destination="oMM-0t-Tgy" id="9Lo-qU-T31"/>
+                <outlet property="zwalletLabel" destination="7qg-UN-spJ" id="WZ5-c2-3ga"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -52,7 +66,7 @@
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gqH-jA-KCa" userLabel="InputUsername">
                                             <rect key="frame" x="41" y="8" width="363" height="34"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yb1-p5-Wim" userLabel="person">
@@ -93,7 +107,7 @@
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hp3-NZ-NKX">
                                             <rect key="frame" x="41" y="8" width="363" height="34"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g7T-uM-CeH">
@@ -141,7 +155,7 @@
                                         </imageView>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Kf-N1-2ir">
                                             <rect key="frame" x="41" y="8" width="303.66666666666669" height="34"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
                                             <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZr-I3-NV3" userLabel="Eye Slash Button">
@@ -149,6 +163,9 @@
                                             <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="eye.slash" catalog="system"/>
+                                            <connections>
+                                                <action selector="eyeSlashButtonAction:" destination="-1" eventType="touchUpInside" id="3ai-6n-rO9"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>

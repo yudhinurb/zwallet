@@ -81,13 +81,11 @@ class LoginViewController: UIViewController {
         let password: String = inputPasswordField.text ?? ""
         
         self.presenter?.login(email: email, password: password)
-        print("pencet tombol login")
 
     }
     
     @IBAction func buttonSignUpAction(_ sender: Any) {
         self.presenter?.registerPage(viewController: self)
-        print("Pencet SignUp")
     }
 }
 

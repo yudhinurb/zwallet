@@ -80,8 +80,6 @@ class LoginViewController: UIViewController {
         let password: String = inputPasswordField.text ?? ""
         
         self.presenter?.login(email: email, password: password)
-        print("pencet tombol login")
-
     }
 }
 

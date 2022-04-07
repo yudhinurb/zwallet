@@ -74,7 +74,6 @@ class LoginViewController: UIViewController {
             inputPasswordField.isSecureTextEntry = true
             eyeSlashButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
         }
-        
     }
     @IBAction func buttonLoginAction(_ sender: UIButton) {
         let email: String = inputEmailField.text ?? ""

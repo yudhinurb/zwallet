@@ -18,6 +18,8 @@
 		12E9CEB527FDAD7500247CEC /* RegisterPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9CEB427FDAD7500247CEC /* RegisterPresenterProtocol.swift */; };
 		12E9CEB727FDAD8900247CEC /* RegisterPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9CEB627FDAD8900247CEC /* RegisterPresenterImpl.swift */; };
 		12E9CEB927FDAED300247CEC /* RegisterViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9CEB827FDAED300247CEC /* RegisterViewProtocol.swift */; };
+		12F6F09827FE9BD600E769DE /* InputAmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F6F09627FE9BD600E769DE /* InputAmountViewController.swift */; };
+		12F6F09927FE9BD600E769DE /* InputAmountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F6F09727FE9BD600E769DE /* InputAmountViewController.xib */; };
 		B00DA4A327F6AB7D00256682 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B00DA4A227F6AB7D00256682 /* Moya */; };
 		B00DA4A527F6D24200256682 /* AuthNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DA4A427F6D24200256682 /* AuthNetworkManager.swift */; };
 		B00DA4A827F6D37E00256682 /* LoginDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DA4A727F6D37E00256682 /* LoginDataResponse.swift */; };
@@ -60,6 +62,8 @@
 		12E9CEB427FDAD7500247CEC /* RegisterPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenterProtocol.swift; sourceTree = "<group>"; };
 		12E9CEB627FDAD8900247CEC /* RegisterPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenterImpl.swift; sourceTree = "<group>"; };
 		12E9CEB827FDAED300247CEC /* RegisterViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewProtocol.swift; sourceTree = "<group>"; };
+		12F6F09627FE9BD600E769DE /* InputAmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAmountViewController.swift; sourceTree = "<group>"; };
+		12F6F09727FE9BD600E769DE /* InputAmountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputAmountViewController.xib; sourceTree = "<group>"; };
 		B00DA4A427F6D24200256682 /* AuthNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManager.swift; sourceTree = "<group>"; };
 		B00DA4A727F6D37E00256682 /* LoginDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataResponse.swift; sourceTree = "<group>"; };
 		B00DA4A927F6D63F00256682 /* AuthNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManagerImpl.swift; sourceTree = "<group>"; };
@@ -161,6 +165,23 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		12F6F09427FE9B9C00E769DE /* InputAmountModule */ = {
+			isa = PBXGroup;
+			children = (
+				12F6F09527FE9BAE00E769DE /* View */,
+			);
+			path = InputAmountModule;
+			sourceTree = "<group>";
+		};
+		12F6F09527FE9BAE00E769DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12F6F09627FE9BD600E769DE /* InputAmountViewController.swift */,
+				12F6F09727FE9BD600E769DE /* InputAmountViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B00DA4A127F6AB7D00256682 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +200,7 @@
 		B01228AF27F43089009D7F98 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				12F6F09427FE9B9C00E769DE /* InputAmountModule */,
 				1279EAF027FD79A80037C8A7 /* RegisterModule */,
 				B01228B027F430CF009D7F98 /* LoginModule */,
 			);
@@ -367,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0F0F9FD27F3342E00874BCF /* LaunchScreen.storyboard in Resources */,
+				12F6F09927FE9BD600E769DE /* InputAmountViewController.xib in Resources */,
 				B0F0F9FA27F3342E00874BCF /* Assets.xcassets in Resources */,
 				1279EAF527FD79D20037C8A7 /* RegisterViewController.xib in Resources */,
 				B01228BE27F43F9F009D7F98 /* LoginViewController.xib in Resources */,
@@ -396,6 +419,7 @@
 				12E9CEB127FDA9C600247CEC /* RegisterInteractorImpl.swift in Sources */,
 				12632F5727FDEF4000CBDC9F /* RegisterEntity.swift in Sources */,
 				B01E55B627F9523B00949205 /* LoginPresenterProtocol.swift in Sources */,
+				12F6F09827FE9BD600E769DE /* InputAmountViewController.swift in Sources */,
 				1279EAF427FD79D20037C8A7 /* RegisterViewController.swift in Sources */,
 				B0F0FA0527F3350700874BCF /* LoginViewController2.swift in Sources */,
 				B0F0F9F527F3342D00874BCF /* ViewController.swift in Sources */,

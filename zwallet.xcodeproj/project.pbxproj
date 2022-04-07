@@ -79,6 +79,9 @@
 		B0F4E5E427FDCCC50053CE3B /* InvoiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4E5E327FDCCC50053CE3B /* InvoiceApi.swift */; };
 		B0F4E5E627FDCCD40053CE3B /* InvoiceNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4E5E527FDCCD40053CE3B /* InvoiceNetworkManager.swift */; };
 		B0F4E5E827FDCCE90053CE3B /* InvoiceNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4E5E727FDCCE90053CE3B /* InvoiceNetworkManagerImpl.swift */; };
+		B0FDBFB727FEA19F00F4895C /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFB627FEA19F00F4895C /* TransferView.swift */; };
+		B0FDBFBA27FEA22700F4895C /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFB827FEA22700F4895C /* TransferViewController.swift */; };
+		B0FDBFBB27FEA22700F4895C /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0FDBFB927FEA22700F4895C /* TransferViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,6 +156,9 @@
 		B0F4E5E327FDCCC50053CE3B /* InvoiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceApi.swift; sourceTree = "<group>"; };
 		B0F4E5E527FDCCD40053CE3B /* InvoiceNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceNetworkManager.swift; sourceTree = "<group>"; };
 		B0F4E5E727FDCCE90053CE3B /* InvoiceNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceNetworkManagerImpl.swift; sourceTree = "<group>"; };
+		B0FDBFB627FEA19F00F4895C /* TransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
+		B0FDBFB827FEA22700F4895C /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
+		B0FDBFB927FEA22700F4895C /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +193,7 @@
 		B01228AF27F43089009D7F98 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				B0FDBFAF27FEA12300F4895C /* TransferModule */,
 				B04F663227FDDDA800825DE8 /* HistoryModule */,
 				B0F4E5A227FDBDF50053CE3B /* HomeModule */,
 				B01228B027F430CF009D7F98 /* LoginModule */,
@@ -550,6 +557,56 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		B0FDBFAF27FEA12300F4895C /* TransferModule */ = {
+			isa = PBXGroup;
+			children = (
+				B0FDBFB527FEA16300F4895C /* Router */,
+				B0FDBFB427FEA15A00F4895C /* Entity */,
+				B0FDBFB327FEA15000F4895C /* Presenter */,
+				B0FDBFB227FEA14100F4895C /* Interactor */,
+				B0FDBFB027FEA12D00F4895C /* View */,
+			);
+			path = TransferModule;
+			sourceTree = "<group>";
+		};
+		B0FDBFB027FEA12D00F4895C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0FDBFB627FEA19F00F4895C /* TransferView.swift */,
+				B0FDBFB827FEA22700F4895C /* TransferViewController.swift */,
+				B0FDBFB927FEA22700F4895C /* TransferViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0FDBFB227FEA14100F4895C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B0FDBFB327FEA15000F4895C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B0FDBFB427FEA15A00F4895C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B0FDBFB527FEA16300F4895C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -629,6 +686,7 @@
 				B0F0F9F827F3342D00874BCF /* Main.storyboard in Resources */,
 				B0F0FA0827F337DD00874BCF /* NunitoSans-Bold.ttf in Resources */,
 				B0F4E5CF27FDC7680053CE3B /* HomeViewController.xib in Resources */,
+				B0FDBFBB27FEA22700F4895C /* TransferViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,6 +728,7 @@
 				B00DA4AA27F6D63F00256682 /* AuthNetworkManagerImpl.swift in Sources */,
 				B0F4E5D327FDCA9D0053CE3B /* BalanceApi.swift in Sources */,
 				B01E55BE27F9597B00949205 /* LoginInteractorOutputProtocol.swift in Sources */,
+				B0FDBFBA27FEA22700F4895C /* TransferViewController.swift in Sources */,
 				B04F664D27FDE10200825DE8 /* HistoryInteractorOutput.swift in Sources */,
 				B0F4E5DA27FDCB5C0053CE3B /* GetBalanceDataResponse.swift in Sources */,
 				B0D2D3C127FDCF910048761D /* TransactionCell.swift in Sources */,
@@ -682,6 +741,7 @@
 				B04F664927FDE0C100825DE8 /* HistoryInteractorImpl.swift in Sources */,
 				B0D2D3BC27FDCEFE0048761D /* TransactionEntity.swift in Sources */,
 				B0F0FA0527F3350700874BCF /* LoginViewController2.swift in Sources */,
+				B0FDBFB727FEA19F00F4895C /* TransferView.swift in Sources */,
 				B0F0F9F527F3342D00874BCF /* ViewController.swift in Sources */,
 				B02C583E27FAD56600C9EA0B /* AppConstant.swift in Sources */,
 				B0C62DF327F9F23A00B1732D /* UserDefaultHelper.swift in Sources */,

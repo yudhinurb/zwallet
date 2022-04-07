@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     @objc func reloadRootView() {
         let token: String? = UserDefaultHelper.shared.get(key: .userToken)
         if token != nil {
-            AppRouter.shared.navigateToLogin()
+            AppRouter.shared.navigateToHome()
         } else {
             AppRouter.shared.navigateToLogin()
         }
@@ -68,6 +68,10 @@ extension SceneDelegate {
         AppRouter.shared.loginScene = {
             LoginRouterImpl.navigateToModule()
         }
+        AppRouter.shared.homeScene = {
+            HomeRouterImpl.navigateToModule()
+        }
     }
+    
 }
 

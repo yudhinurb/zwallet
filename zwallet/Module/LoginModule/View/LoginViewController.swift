@@ -84,6 +84,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func buttonSignUpAction(_ sender: Any) {
         self.presenter?.registerPage(viewController: self)
+
     }
 }
 

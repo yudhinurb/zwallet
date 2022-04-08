@@ -23,6 +23,8 @@
 		B02C583A27FAC0C900C9EA0B /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = B02C583927FAC0C900C9EA0B /* netfox */; };
 		B02C583C27FAD2B100C9EA0B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C583B27FAD2B100C9EA0B /* AppRouter.swift */; };
 		B02C583E27FAD56600C9EA0B /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C583D27FAD56600C9EA0B /* AppConstant.swift */; };
+		B030919127FFDD7E00201E38 /* TransferPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B030919027FFDD7E00201E38 /* TransferPresenterImpl.swift */; };
+		B030919327FFDDEE00201E38 /* TransferRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B030919227FFDDEE00201E38 /* TransferRouterImpl.swift */; };
 		B04F663827FDDE5800825DE8 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F663627FDDE5800825DE8 /* HeaderCell.swift */; };
 		B04F663927FDDE5800825DE8 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04F663727FDDE5800825DE8 /* HeaderCell.xib */; };
 		B04F663C27FDDEEF00825DE8 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F663A27FDDEEF00825DE8 /* HistoryViewController.swift */; };
@@ -82,6 +84,15 @@
 		B0FDBFB727FEA19F00F4895C /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFB627FEA19F00F4895C /* TransferView.swift */; };
 		B0FDBFBA27FEA22700F4895C /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFB827FEA22700F4895C /* TransferViewController.swift */; };
 		B0FDBFBB27FEA22700F4895C /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0FDBFB927FEA22700F4895C /* TransferViewController.xib */; };
+		B0FDBFBD27FEC6C700F4895C /* TransferPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFBC27FEC6C700F4895C /* TransferPresenterProtocol.swift */; };
+		B0FDBFBF27FEC6E400F4895C /* TransferInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFBE27FEC6E400F4895C /* TransferInteractorProtocol.swift */; };
+		B0FDBFC127FEC6F700F4895C /* TransferRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFC027FEC6F700F4895C /* TransferRouterProtocol.swift */; };
+		B0FDBFC427FEC74300F4895C /* TransferApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFC327FEC74300F4895C /* TransferApi.swift */; };
+		B0FDBFC627FEC75A00F4895C /* TransferNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFC527FEC75A00F4895C /* TransferNetworkManager.swift */; };
+		B0FDBFC827FEC77800F4895C /* TransferNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFC727FEC77800F4895C /* TransferNetworkManagerImpl.swift */; };
+		B0FDBFCA27FEC96B00F4895C /* TransferDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFC927FEC96B00F4895C /* TransferDataResponse.swift */; };
+		B0FDBFCC27FECE9B00F4895C /* TransferInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFCB27FECE9B00F4895C /* TransferInteractorImpl.swift */; };
+		B0FDBFCE27FECF3C00F4895C /* TransferInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFCD27FECF3C00F4895C /* TransferInteractorOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +110,8 @@
 		B01E55C127F96C0500949205 /* LoginRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterImpl.swift; sourceTree = "<group>"; };
 		B02C583B27FAD2B100C9EA0B /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		B02C583D27FAD56600C9EA0B /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		B030919027FFDD7E00201E38 /* TransferPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferPresenterImpl.swift; sourceTree = "<group>"; };
+		B030919227FFDDEE00201E38 /* TransferRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferRouterImpl.swift; sourceTree = "<group>"; };
 		B04F663627FDDE5800825DE8 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		B04F663727FDDE5800825DE8 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		B04F663A27FDDEEF00825DE8 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +172,15 @@
 		B0FDBFB627FEA19F00F4895C /* TransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
 		B0FDBFB827FEA22700F4895C /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		B0FDBFB927FEA22700F4895C /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
+		B0FDBFBC27FEC6C700F4895C /* TransferPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferPresenterProtocol.swift; sourceTree = "<group>"; };
+		B0FDBFBE27FEC6E400F4895C /* TransferInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferInteractorProtocol.swift; sourceTree = "<group>"; };
+		B0FDBFC027FEC6F700F4895C /* TransferRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferRouterProtocol.swift; sourceTree = "<group>"; };
+		B0FDBFC327FEC74300F4895C /* TransferApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferApi.swift; sourceTree = "<group>"; };
+		B0FDBFC527FEC75A00F4895C /* TransferNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferNetworkManager.swift; sourceTree = "<group>"; };
+		B0FDBFC727FEC77800F4895C /* TransferNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferNetworkManagerImpl.swift; sourceTree = "<group>"; };
+		B0FDBFC927FEC96B00F4895C /* TransferDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDataResponse.swift; sourceTree = "<group>"; };
+		B0FDBFCB27FECE9B00F4895C /* TransferInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferInteractorImpl.swift; sourceTree = "<group>"; };
+		B0FDBFCD27FECF3C00F4895C /* TransferInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferInteractorOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +344,7 @@
 		B0BA5C0F27F6A601005DAC02 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B0FDBFC227FEC71D00F4895C /* Transfer */,
 				B0F4E5DD27FDCC7E0053CE3B /* Invoice */,
 				B0F4E5D127FDCA640053CE3B /* Balance */,
 				B0F4E5D027FDCA550053CE3B /* Auth */,
@@ -582,6 +605,9 @@
 		B0FDBFB227FEA14100F4895C /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				B0FDBFBE27FEC6E400F4895C /* TransferInteractorProtocol.swift */,
+				B0FDBFCB27FECE9B00F4895C /* TransferInteractorImpl.swift */,
+				B0FDBFCD27FECF3C00F4895C /* TransferInteractorOutput.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -589,6 +615,8 @@
 		B0FDBFB327FEA15000F4895C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				B0FDBFBC27FEC6C700F4895C /* TransferPresenterProtocol.swift */,
+				B030919027FFDD7E00201E38 /* TransferPresenterImpl.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -596,6 +624,7 @@
 		B0FDBFB427FEA15A00F4895C /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				B0FDBFC927FEC96B00F4895C /* TransferDataResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -603,8 +632,20 @@
 		B0FDBFB527FEA16300F4895C /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				B0FDBFC027FEC6F700F4895C /* TransferRouterProtocol.swift */,
+				B030919227FFDDEE00201E38 /* TransferRouterImpl.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		B0FDBFC227FEC71D00F4895C /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+				B0FDBFC327FEC74300F4895C /* TransferApi.swift */,
+				B0FDBFC527FEC75A00F4895C /* TransferNetworkManager.swift */,
+				B0FDBFC727FEC77800F4895C /* TransferNetworkManagerImpl.swift */,
+			);
+			path = Transfer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -708,19 +749,28 @@
 				B0F4E5E827FDCCE90053CE3B /* InvoiceNetworkManagerImpl.swift in Sources */,
 				B04F664427FDE06900825DE8 /* HistoryPresenterImpl.swift in Sources */,
 				B04F664127FDE03000825DE8 /* HistoryDataSource.swift in Sources */,
+				B0FDBFC427FEC74300F4895C /* TransferApi.swift in Sources */,
 				B0D2D3CA27FDD0F80048761D /* UIViewExtension.swift in Sources */,
 				B0F4E5C727FDC5940053CE3B /* HomeDataSource.swift in Sources */,
 				B02C583C27FAD2B100C9EA0B /* AppRouter.swift in Sources */,
 				B0F4E5AD27FDBF100053CE3B /* HomeInteractor.swift in Sources */,
+				B0FDBFBD27FEC6C700F4895C /* TransferPresenterProtocol.swift in Sources */,
 				B01E55C227F96C0500949205 /* LoginRouterImpl.swift in Sources */,
 				B01E55B827F952C300949205 /* LoginPresenterImpl.swift in Sources */,
+				B0FDBFCE27FECF3C00F4895C /* TransferInteractorOutput.swift in Sources */,
 				B0F4E5B627FDBFDE0053CE3B /* HomePresenter.swift in Sources */,
+				B030919127FFDD7E00201E38 /* TransferPresenterImpl.swift in Sources */,
+				B030919327FFDDEE00201E38 /* TransferRouterImpl.swift in Sources */,
 				B0F4E5E627FDCCD40053CE3B /* InvoiceNetworkManager.swift in Sources */,
 				B04F665227FDE17100825DE8 /* HistoryRouter.swift in Sources */,
+				B0FDBFC627FEC75A00F4895C /* TransferNetworkManager.swift in Sources */,
 				B0F4E5DC27FDCB720053CE3B /* GetBalanceResponse.swift in Sources */,
+				B0FDBFC827FEC77800F4895C /* TransferNetworkManagerImpl.swift in Sources */,
+				B0FDBFBF27FEC6E400F4895C /* TransferInteractorProtocol.swift in Sources */,
 				B0F4E5BB27FDC04B0053CE3B /* DashboardCellDelegate.swift in Sources */,
 				B0F4E5D727FDCAFD0053CE3B /* BalanceNetworkManagerImpl.swift in Sources */,
 				B04F664B27FDE0D900825DE8 /* HistoryInteractor.swift in Sources */,
+				B0FDBFC127FEC6F700F4895C /* TransferRouterProtocol.swift in Sources */,
 				B0F4E5AF27FDBF490053CE3B /* HomeInteractorImpl.swift in Sources */,
 				B0F4E5E027FDCC9D0053CE3B /* GetInvoiceDataResponse.swift in Sources */,
 				B0F4E5E227FDCCB30053CE3B /* GetInvoiceResponse.swift in Sources */,
@@ -735,6 +785,7 @@
 				B0F4E5AA27FDBED20053CE3B /* UserProfileEntity.swift in Sources */,
 				B00DA4A527F6D24200256682 /* AuthNetworkManager.swift in Sources */,
 				B01E55B627F9523B00949205 /* LoginPresenterProtocol.swift in Sources */,
+				B0FDBFCA27FEC96B00F4895C /* TransferDataResponse.swift in Sources */,
 				B0F4E5C527FDC5620053CE3B /* HomeView.swift in Sources */,
 				B0F4E5E427FDCCC50053CE3B /* InvoiceApi.swift in Sources */,
 				B0F4E5A727FDBE830053CE3B /* HomeRouterImpl.swift in Sources */,
@@ -755,6 +806,7 @@
 				B01E55BC27F953D800949205 /* LoginRouterProtocol.swift in Sources */,
 				B04F665027FDE15F00825DE8 /* HistoryRouterImpl.swift in Sources */,
 				B04F664627FDE07900825DE8 /* HistoryPresenter.swift in Sources */,
+				B0FDBFCC27FECE9B00F4895C /* TransferInteractorImpl.swift in Sources */,
 				B0F4E5B427FDBFBC0053CE3B /* HomePresenterImpl.swift in Sources */,
 				B01E55BA27F953BF00949205 /* LoginInteractorProtocol.swift in Sources */,
 			);

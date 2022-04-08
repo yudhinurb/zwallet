@@ -19,6 +19,7 @@ public class AuthNetworkManagerImpl: AuthNetworkManager{
             case .success(let res):
                 let decoder = JSONDecoder()
                 do {
+                    
                     let responseLogin = try decoder.decode(LoginResponse.self, from: res.data)
                     completion(responseLogin.data, nil)
                 } catch {

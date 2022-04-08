@@ -11,6 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransferViewController" customModule="zwallet" customModuleProvider="target">
             <connections>
+                <outlet property="amountLabel" destination="K7H-OO-1hn" id="eeo-oj-BC1"/>
+                <outlet property="balanceLabel" destination="3Ky-Zx-X5T" id="6fV-h4-ku6"/>
+                <outlet property="notesField" destination="3T7-WE-Eu5" id="jY8-WG-1eF"/>
+                <outlet property="receiverImage" destination="zFP-Tv-qDH" id="4F6-NT-as5"/>
+                <outlet property="receiverName" destination="MT4-YP-KDW" id="vO0-oC-iIm"/>
+                <outlet property="receiverPhoneNumber" destination="XUJ-QW-yIG" id="ZTt-hb-1Lx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -112,6 +118,9 @@
                             <real key="value" value="0.0"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="transferButtonActioin:" destination="-1" eventType="touchUpInside" id="W0F-u2-NfT"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

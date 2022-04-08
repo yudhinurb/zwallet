@@ -38,4 +38,9 @@ class DashboardCell: UITableViewCell {
     }
     
     
+    @IBAction func transferButtonAction(_ sender: Any) {
+        self.delegate?.showTransfer()
+    }
+    
+    
 }

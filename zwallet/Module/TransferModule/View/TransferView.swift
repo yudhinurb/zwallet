@@ -9,4 +9,6 @@ import Foundation
 
 protocol TransferView {
     func showReceiverData()
+    func showError()
+    func showAlertSuccess()
 }

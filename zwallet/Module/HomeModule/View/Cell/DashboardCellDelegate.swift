@@ -9,5 +9,6 @@ import Foundation
 
 protocol DashboardCellDelegate {
     func showAllTransaction()
+    func showTransfer()
     func logout()
 }

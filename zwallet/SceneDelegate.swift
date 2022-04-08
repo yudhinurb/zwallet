@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import netfox
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -14,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         self.setupAppRouter()
-
+        NFX.sharedInstance().start()
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = scene

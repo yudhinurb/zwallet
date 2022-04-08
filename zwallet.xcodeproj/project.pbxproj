@@ -82,6 +82,16 @@
 		B0FDBFB727FEA19F00F4895C /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFB627FEA19F00F4895C /* TransferView.swift */; };
 		B0FDBFBA27FEA22700F4895C /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFB827FEA22700F4895C /* TransferViewController.swift */; };
 		B0FDBFBB27FEA22700F4895C /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0FDBFB927FEA22700F4895C /* TransferViewController.xib */; };
+		B19B920C27FFD75C001BAF41 /* OtpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B19B91F627FFD75C001BAF41 /* OtpViewController.xib */; };
+		B19B920D27FFD75C001BAF41 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B91F727FFD75C001BAF41 /* OtpViewController.swift */; };
+		B19B920E27FFD75C001BAF41 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B19B91FA27FFD75C001BAF41 /* LoginViewController.xib */; };
+		B19B920F27FFD75C001BAF41 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B91FB27FFD75C001BAF41 /* LoginViewController.swift */; };
+		B19B921027FFD75C001BAF41 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B19B91FE27FFD75C001BAF41 /* RegisterViewController.xib */; };
+		B19B921127FFD75C001BAF41 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B91FF27FFD75C001BAF41 /* RegisterViewController.swift */; };
+		B19B921227FFD75C001BAF41 /* SetPinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B19B920627FFD75C001BAF41 /* SetPinViewController.xib */; };
+		B19B921327FFD75C001BAF41 /* SetPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B920727FFD75C001BAF41 /* SetPinViewController.swift */; };
+		B19B921427FFD75C001BAF41 /* InputPinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B19B920A27FFD75C001BAF41 /* InputPinViewController.xib */; };
+		B19B921527FFD75C001BAF41 /* InputPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B920B27FFD75C001BAF41 /* InputPinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,6 +169,16 @@
 		B0FDBFB627FEA19F00F4895C /* TransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
 		B0FDBFB827FEA22700F4895C /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		B0FDBFB927FEA22700F4895C /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
+		B19B91F627FFD75C001BAF41 /* OtpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtpViewController.xib; sourceTree = "<group>"; };
+		B19B91F727FFD75C001BAF41 /* OtpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
+		B19B91FA27FFD75C001BAF41 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		B19B91FB27FFD75C001BAF41 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B19B91FE27FFD75C001BAF41 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		B19B91FF27FFD75C001BAF41 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B19B920627FFD75C001BAF41 /* SetPinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetPinViewController.xib; sourceTree = "<group>"; };
+		B19B920727FFD75C001BAF41 /* SetPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPinViewController.swift; sourceTree = "<group>"; };
+		B19B920A27FFD75C001BAF41 /* InputPinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputPinViewController.xib; sourceTree = "<group>"; };
+		B19B920B27FFD75C001BAF41 /* InputPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputPinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +421,7 @@
 		B0F0F9EF27F3342D00874BCF /* zwallet */ = {
 			isa = PBXGroup;
 			children = (
+				B19B91F327FFD75C001BAF41 /* SlicingViewModule */,
 				B0D2D3C627FDD0A80048761D /* Extension */,
 				B0D2D3BD27FDCF440048761D /* Component */,
 				B0D2D3B927FDCEE70048761D /* Data */,
@@ -607,6 +628,135 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		B19B91F327FFD75C001BAF41 /* SlicingViewModule */ = {
+			isa = PBXGroup;
+			children = (
+				B19B91F427FFD75C001BAF41 /* OtpModule */,
+				B19B91F827FFD75C001BAF41 /* LoginModule */,
+				B19B91FC27FFD75C001BAF41 /* RegisterModule */,
+				B19B920027FFD75C001BAF41 /* TransferModule */,
+				B19B920127FFD75C001BAF41 /* PinModule */,
+			);
+			path = SlicingViewModule;
+			sourceTree = "<group>";
+		};
+		B19B91F427FFD75C001BAF41 /* OtpModule */ = {
+			isa = PBXGroup;
+			children = (
+				B19B91F527FFD75C001BAF41 /* View */,
+			);
+			path = OtpModule;
+			sourceTree = "<group>";
+		};
+		B19B91F527FFD75C001BAF41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B19B91F627FFD75C001BAF41 /* OtpViewController.xib */,
+				B19B91F727FFD75C001BAF41 /* OtpViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B19B91F827FFD75C001BAF41 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				B19B91F927FFD75C001BAF41 /* View */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		B19B91F927FFD75C001BAF41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B19B91FA27FFD75C001BAF41 /* LoginViewController.xib */,
+				B19B91FB27FFD75C001BAF41 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B19B91FC27FFD75C001BAF41 /* RegisterModule */ = {
+			isa = PBXGroup;
+			children = (
+				B19B91FD27FFD75C001BAF41 /* View */,
+			);
+			path = RegisterModule;
+			sourceTree = "<group>";
+		};
+		B19B91FD27FFD75C001BAF41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B19B91FE27FFD75C001BAF41 /* RegisterViewController.xib */,
+				B19B91FF27FFD75C001BAF41 /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B19B920027FFD75C001BAF41 /* TransferModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TransferModule;
+			sourceTree = "<group>";
+		};
+		B19B920127FFD75C001BAF41 /* PinModule */ = {
+			isa = PBXGroup;
+			children = (
+				B19B920227FFD75C001BAF41 /* ChangePin */,
+				B19B920427FFD75C001BAF41 /* SetPin */,
+				B19B920827FFD75C001BAF41 /* InputPin */,
+			);
+			path = PinModule;
+			sourceTree = "<group>";
+		};
+		B19B920227FFD75C001BAF41 /* ChangePin */ = {
+			isa = PBXGroup;
+			children = (
+				B19B920327FFD75C001BAF41 /* View */,
+			);
+			path = ChangePin;
+			sourceTree = "<group>";
+		};
+		B19B920327FFD75C001BAF41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B19B920427FFD75C001BAF41 /* SetPin */ = {
+			isa = PBXGroup;
+			children = (
+				B19B920527FFD75C001BAF41 /* View */,
+			);
+			path = SetPin;
+			sourceTree = "<group>";
+		};
+		B19B920527FFD75C001BAF41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B19B920627FFD75C001BAF41 /* SetPinViewController.xib */,
+				B19B920727FFD75C001BAF41 /* SetPinViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B19B920827FFD75C001BAF41 /* InputPin */ = {
+			isa = PBXGroup;
+			children = (
+				B19B920927FFD75C001BAF41 /* View */,
+			);
+			path = InputPin;
+			sourceTree = "<group>";
+		};
+		B19B920927FFD75C001BAF41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B19B920A27FFD75C001BAF41 /* InputPinViewController.xib */,
+				B19B920B27FFD75C001BAF41 /* InputPinViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -677,15 +827,20 @@
 			files = (
 				B04F663927FDDE5800825DE8 /* HeaderCell.xib in Resources */,
 				B0F0F9FD27F3342E00874BCF /* LaunchScreen.storyboard in Resources */,
+				B19B921427FFD75C001BAF41 /* InputPinViewController.xib in Resources */,
 				B0F0F9FA27F3342E00874BCF /* Assets.xcassets in Resources */,
 				B0D2D3C227FDCF910048761D /* TransactionCell.xib in Resources */,
 				B01228BE27F43F9F009D7F98 /* LoginViewController.xib in Resources */,
 				B04F663D27FDDEEF00825DE8 /* HistoryViewController.xib in Resources */,
 				B0F0FA0A27F337F200874BCF /* NunitoSans-Regular.ttf in Resources */,
+				B19B920C27FFD75C001BAF41 /* OtpViewController.xib in Resources */,
 				B0F4E5C327FDC4080053CE3B /* DashboardCell.xib in Resources */,
 				B0F0F9F827F3342D00874BCF /* Main.storyboard in Resources */,
 				B0F0FA0827F337DD00874BCF /* NunitoSans-Bold.ttf in Resources */,
+				B19B921227FFD75C001BAF41 /* SetPinViewController.xib in Resources */,
+				B19B921027FFD75C001BAF41 /* RegisterViewController.xib in Resources */,
 				B0F4E5CF27FDC7680053CE3B /* HomeViewController.xib in Resources */,
+				B19B920E27FFD75C001BAF41 /* LoginViewController.xib in Resources */,
 				B0FDBFBB27FEA22700F4895C /* TransferViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -704,8 +859,10 @@
 				B04F663827FDDE5800825DE8 /* HeaderCell.swift in Sources */,
 				B04F663C27FDDEEF00825DE8 /* HistoryViewController.swift in Sources */,
 				B0F4E5B127FDBF760053CE3B /* HomeInteractorOutput.swift in Sources */,
+				B19B921327FFD75C001BAF41 /* SetPinViewController.swift in Sources */,
 				B04F663F27FDE01000825DE8 /* HistoryView.swift in Sources */,
 				B0F4E5E827FDCCE90053CE3B /* InvoiceNetworkManagerImpl.swift in Sources */,
+				B19B921127FFD75C001BAF41 /* RegisterViewController.swift in Sources */,
 				B04F664427FDE06900825DE8 /* HistoryPresenterImpl.swift in Sources */,
 				B04F664127FDE03000825DE8 /* HistoryDataSource.swift in Sources */,
 				B0D2D3CA27FDD0F80048761D /* UIViewExtension.swift in Sources */,
@@ -741,11 +898,13 @@
 				B04F664927FDE0C100825DE8 /* HistoryInteractorImpl.swift in Sources */,
 				B0D2D3BC27FDCEFE0048761D /* TransactionEntity.swift in Sources */,
 				B0F0FA0527F3350700874BCF /* LoginViewController2.swift in Sources */,
+				B19B920F27FFD75C001BAF41 /* LoginViewController.swift in Sources */,
 				B0FDBFB727FEA19F00F4895C /* TransferView.swift in Sources */,
 				B0F0F9F527F3342D00874BCF /* ViewController.swift in Sources */,
 				B02C583E27FAD56600C9EA0B /* AppConstant.swift in Sources */,
 				B0C62DF327F9F23A00B1732D /* UserDefaultHelper.swift in Sources */,
 				B00DA4A827F6D37E00256682 /* LoginDataResponse.swift in Sources */,
+				B19B921527FFD75C001BAF41 /* InputPinViewController.swift in Sources */,
 				B01E55C027F95CD200949205 /* LoginInteractorImpl.swift in Sources */,
 				B0F0F9F127F3342D00874BCF /* AppDelegate.swift in Sources */,
 				B0F4E5A527FDBE6F0053CE3B /* HomeRouter.swift in Sources */,
@@ -755,6 +914,7 @@
 				B01E55BC27F953D800949205 /* LoginRouterProtocol.swift in Sources */,
 				B04F665027FDE15F00825DE8 /* HistoryRouterImpl.swift in Sources */,
 				B04F664627FDE07900825DE8 /* HistoryPresenter.swift in Sources */,
+				B19B920D27FFD75C001BAF41 /* OtpViewController.swift in Sources */,
 				B0F4E5B427FDBFBC0053CE3B /* HomePresenterImpl.swift in Sources */,
 				B01E55BA27F953BF00949205 /* LoginInteractorProtocol.swift in Sources */,
 			);

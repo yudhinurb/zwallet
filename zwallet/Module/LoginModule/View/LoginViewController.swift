@@ -80,7 +80,6 @@ class LoginViewController: UIViewController {
         let password: String = inputPasswordField.text ?? ""
         
         self.presenter?.login(email: email, password: password)
-
     }
     
     @IBAction func buttonSignUpAction(_ sender: Any) {
@@ -118,6 +117,7 @@ extension LoginViewController: UITextFieldDelegate {
             passwordLineView.backgroundColor = UIColor(named: "Primary")
         }
     }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == inputEmailField {
             if inputEmailField.text == "" {
@@ -131,6 +131,7 @@ extension LoginViewController: UITextFieldDelegate {
             }
         }
     }
+    
     func textFieldDidChangeSelection(_ textField: UITextField) {
         if textField == inputEmailField {
             if inputEmailField.text == "" {

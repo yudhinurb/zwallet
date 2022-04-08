@@ -28,3 +28,11 @@ class RegisterPresenterImpl: RegisterPresenterProtocol {
         self.router.navigateToLogin(viewController: viewController)
     }
 }
+
+extension RegisterPresenterImpl: RegisterInteractorOutput {
+    func authRegisterResult(isSuccess: Bool, message: String) {
+        
+    }
+    
+    
+}

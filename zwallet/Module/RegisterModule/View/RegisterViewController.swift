@@ -42,7 +42,6 @@ class RegisterViewController: UIViewController  {
         self.inputPassword.textColor = UIColor(named: "Black")
     }
     
-    
     @IBAction func eyeSlashButtonAction(_ sender: Any) {
         if inputPassword.isSecureTextEntry {
             inputPassword.isSecureTextEntry = false

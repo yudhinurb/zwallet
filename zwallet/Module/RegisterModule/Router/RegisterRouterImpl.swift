@@ -18,7 +18,7 @@ class RegisterRouterImpl {
         let interactor = RegisterInteractorImpl(networkManager: authNetworkManager)
         let presenter = RegisterPresenterImpl(view: vc, interactor: interactor, router: router)
         
-//        interactor.interactorOutput = presenter
+        interactor.interactorOutput = presenter
         vc.presenter = presenter
 
         viewController.present(vc, animated: true, completion: nil)

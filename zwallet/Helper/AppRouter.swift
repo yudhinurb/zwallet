@@ -32,6 +32,13 @@ public class AppRouter {
     public func navigateToHome() {
         self.homeScene?()
     }
+    
+    //Transfer Scene
+    public var transferScene: (() -> ())? = nil
+
+    public func navigateToTransfer() {
+        self.transferScene?()
+    }
 
     //History Scene
     public var historyScene: ((_ viewController: UIViewController) -> ())? = nil

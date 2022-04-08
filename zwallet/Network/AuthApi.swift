@@ -11,6 +11,7 @@ import Moya
 public enum AuthApi {
     case login(email: String, password:String)
     case register(username: String, email: String, password: String)
+    case transfer(receiver: String, amount: Int, notes: String)
 }
 
 extension AuthApi : TargetType {
@@ -24,6 +25,8 @@ extension AuthApi : TargetType {
             return "auth/login"
         case .register:
             return "auth/signup"
+        case .transfer:
+            return "transfer/newTransfer"
         }
     }
     
@@ -37,6 +40,8 @@ extension AuthApi : TargetType {
             return .post
         case .register:
             return .post
+        case .transfer:
+            return .post
         }
     }
     
@@ -46,6 +51,8 @@ extension AuthApi : TargetType {
             return .requestParameters(parameters: ["email": email, "password": password], encoding: JSONEncoding.default)
         case .register(let username, let email, let password):
             return .requestParameters(parameters: ["username": username, "email": email, "password": password], encoding: JSONEncoding.default)
+        case .transfer(let receiver, let amount, let notes):
+            return .requestParameters(parameters: ["receiver": receiver, "amount": amount, "notes": notes], encoding: JSONEncoding.default)
         }
     }
     
@@ -55,6 +62,8 @@ extension AuthApi : TargetType {
             return ["Content-Type": "application/json"]
         case .register:
             return ["Content-Type": "application/json"]
+        case .transfer:
+            return ["Content-Type": "application/json", "x-access-PIN": "123456"]
         }
     }
 }

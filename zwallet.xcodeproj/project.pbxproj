@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12203F4B2800363400830A7D /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12203F4A2800363400830A7D /* AuthApi.swift */; };
 		12632F5727FDEF4000CBDC9F /* RegisterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12632F5627FDEF4000CBDC9F /* RegisterEntity.swift */; };
-		1270F62227FF2B7800956DE3 /* TransferNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1270F62127FF2B7800956DE3 /* TransferNetworkManager.swift */; };
-		1270F62427FF2B8C00956DE3 /* TransferNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1270F62327FF2B8C00956DE3 /* TransferNetworkManagerImpl.swift */; };
 		1279EAF427FD79D20037C8A7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279EAF227FD79D20037C8A7 /* RegisterViewController.swift */; };
 		1279EAF527FD79D20037C8A7 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1279EAF327FD79D20037C8A7 /* RegisterViewController.xib */; };
 		12E9CEAB27FDA69300247CEC /* RegisterRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9CEAA27FDA69300247CEC /* RegisterRouterImpl.swift */; };
@@ -33,7 +32,6 @@
 		B01E55BE27F9597B00949205 /* LoginInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E55BD27F9597B00949205 /* LoginInteractorOutputProtocol.swift */; };
 		B01E55C027F95CD200949205 /* LoginInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E55BF27F95CD200949205 /* LoginInteractorImpl.swift */; };
 		B01E55C227F96C0500949205 /* LoginRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E55C127F96C0500949205 /* LoginRouterImpl.swift */; };
-		B02C583A27FAC0C900C9EA0B /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = B02C583927FAC0C900C9EA0B /* netfox */; };
 		B02C583C27FAD2B100C9EA0B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C583B27FAD2B100C9EA0B /* AppRouter.swift */; };
 		B02C583E27FAD56600C9EA0B /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C583D27FAD56600C9EA0B /* AppConstant.swift */; };
 		B04F663827FDDE5800825DE8 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F663627FDDE5800825DE8 /* HeaderCell.swift */; };
@@ -50,7 +48,6 @@
 		B04F665027FDE15F00825DE8 /* HistoryRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F664F27FDE15F00825DE8 /* HistoryRouterImpl.swift */; };
 		B04F665227FDE17100825DE8 /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F665127FDE17100825DE8 /* HistoryRouter.swift */; };
 		B088085427F55666009E35B8 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B088085327F55666009E35B8 /* LoginViewProtocol.swift */; };
-		B0BA5C1127F6A690005DAC02 /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA5C1027F6A690005DAC02 /* AuthApi.swift */; };
 		B0C62DF327F9F23A00B1732D /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C62DF227F9F23A00B1732D /* UserDefaultHelper.swift */; };
 		B0D2D3BC27FDCEFE0048761D /* TransactionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D2D3BB27FDCEFE0048761D /* TransactionEntity.swift */; };
 		B0D2D3C127FDCF910048761D /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D2D3BF27FDCF910048761D /* TransactionCell.swift */; };
@@ -92,23 +89,11 @@
 		B0F4E5E427FDCCC50053CE3B /* InvoiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4E5E327FDCCC50053CE3B /* InvoiceApi.swift */; };
 		B0F4E5E627FDCCD40053CE3B /* InvoiceNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4E5E527FDCCD40053CE3B /* InvoiceNetworkManager.swift */; };
 		B0F4E5E827FDCCE90053CE3B /* InvoiceNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4E5E727FDCCE90053CE3B /* InvoiceNetworkManagerImpl.swift */; };
-		B0FDBFB727FEA19F00F4895C /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFB627FEA19F00F4895C /* TransferView.swift */; };
-		B0FDBFBA27FEA22700F4895C /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFB827FEA22700F4895C /* TransferViewController.swift */; };
-		B0FDBFBB27FEA22700F4895C /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0FDBFB927FEA22700F4895C /* TransferViewController.xib */; };
-		B19B920C27FFD75C001BAF41 /* OtpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B19B91F627FFD75C001BAF41 /* OtpViewController.xib */; };
-		B19B920D27FFD75C001BAF41 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B91F727FFD75C001BAF41 /* OtpViewController.swift */; };
-		B19B921027FFD75C001BAF41 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B19B91FE27FFD75C001BAF41 /* RegisterViewController.xib */; };
-		B19B921127FFD75C001BAF41 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B91FF27FFD75C001BAF41 /* RegisterViewController.swift */; };
-		B19B921227FFD75C001BAF41 /* SetPinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B19B920627FFD75C001BAF41 /* SetPinViewController.xib */; };
-		B19B921327FFD75C001BAF41 /* SetPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B920727FFD75C001BAF41 /* SetPinViewController.swift */; };
-		B19B921427FFD75C001BAF41 /* InputPinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B19B920A27FFD75C001BAF41 /* InputPinViewController.xib */; };
-		B19B921527FFD75C001BAF41 /* InputPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B920B27FFD75C001BAF41 /* InputPinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12203F4A2800363400830A7D /* AuthApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
 		12632F5627FDEF4000CBDC9F /* RegisterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEntity.swift; sourceTree = "<group>"; };
-		1270F62127FF2B7800956DE3 /* TransferNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferNetworkManager.swift; sourceTree = "<group>"; };
-		1270F62327FF2B8C00956DE3 /* TransferNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferNetworkManagerImpl.swift; sourceTree = "<group>"; };
 		1279EAF227FD79D20037C8A7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1279EAF327FD79D20037C8A7 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		12E9CEAA27FDA69300247CEC /* RegisterRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouterImpl.swift; sourceTree = "<group>"; };
@@ -147,7 +132,6 @@
 		B04F664F27FDE15F00825DE8 /* HistoryRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouterImpl.swift; sourceTree = "<group>"; };
 		B04F665127FDE17100825DE8 /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
 		B088085327F55666009E35B8 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
-		B0BA5C1027F6A690005DAC02 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
 		B0C62DF227F9F23A00B1732D /* UserDefaultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
 		B0D2D3BB27FDCEFE0048761D /* TransactionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEntity.swift; sourceTree = "<group>"; };
 		B0D2D3BF27FDCF910048761D /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
@@ -190,17 +174,6 @@
 		B0F4E5E327FDCCC50053CE3B /* InvoiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceApi.swift; sourceTree = "<group>"; };
 		B0F4E5E527FDCCD40053CE3B /* InvoiceNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceNetworkManager.swift; sourceTree = "<group>"; };
 		B0F4E5E727FDCCE90053CE3B /* InvoiceNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceNetworkManagerImpl.swift; sourceTree = "<group>"; };
-		B0FDBFB627FEA19F00F4895C /* TransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
-		B0FDBFB827FEA22700F4895C /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
-		B0FDBFB927FEA22700F4895C /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
-		B19B91F627FFD75C001BAF41 /* OtpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtpViewController.xib; sourceTree = "<group>"; };
-		B19B91F727FFD75C001BAF41 /* OtpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
-		B19B91FE27FFD75C001BAF41 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
-		B19B91FF27FFD75C001BAF41 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		B19B920627FFD75C001BAF41 /* SetPinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetPinViewController.xib; sourceTree = "<group>"; };
-		B19B920727FFD75C001BAF41 /* SetPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPinViewController.swift; sourceTree = "<group>"; };
-		B19B920A27FFD75C001BAF41 /* InputPinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputPinViewController.xib; sourceTree = "<group>"; };
-		B19B920B27FFD75C001BAF41 /* InputPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputPinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,7 +182,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0D2D3C527FDCFFE0048761D /* Kingfisher in Frameworks */,
-				B02C583A27FAC0C900C9EA0B /* netfox in Frameworks */,
 				B00DA4A327F6AB7D00256682 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,24 +195,6 @@
 				12632F5627FDEF4000CBDC9F /* RegisterEntity.swift */,
 			);
 			path = Entity;
-			sourceTree = "<group>";
-		};
-		1270F61F27FF28BA00956DE3 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				B00DA4A927F6D63F00256682 /* AuthNetworkManagerImpl.swift */,
-				B00DA4A427F6D24200256682 /* AuthNetworkManager.swift */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		1270F62027FF28DC00956DE3 /* Transfer */ = {
-			isa = PBXGroup;
-			children = (
-				1270F62127FF2B7800956DE3 /* TransferNetworkManager.swift */,
-				1270F62327FF2B8C00956DE3 /* TransferNetworkManagerImpl.swift */,
-			);
-			path = Transfer;
 			sourceTree = "<group>";
 		};
 		1279EAF027FD79A80037C8A7 /* RegisterModule */ = {
@@ -312,7 +266,6 @@
 			isa = PBXGroup;
 			children = (
 				1279EAF027FD79A80037C8A7 /* RegisterModule */,
-				B0FDBFAF27FEA12300F4895C /* TransferModule */,
 				B04F663227FDDDA800825DE8 /* HistoryModule */,
 				B0F4E5A227FDBDF50053CE3B /* HomeModule */,
 				B01228B027F430CF009D7F98 /* LoginModule */,
@@ -441,9 +394,6 @@
 		B0BA5C0F27F6A601005DAC02 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				B0BA5C1027F6A690005DAC02 /* AuthApi.swift */,
-				1270F62027FF28DC00956DE3 /* Transfer */,
-				1270F61F27FF28BA00956DE3 /* Auth */,
 				B0F4E5DD27FDCC7E0053CE3B /* Invoice */,
 				B0F4E5D127FDCA640053CE3B /* Balance */,
 				B0F4E5D027FDCA550053CE3B /* Auth */,
@@ -523,7 +473,6 @@
 		B0F0F9EF27F3342D00874BCF /* zwallet */ = {
 			isa = PBXGroup;
 			children = (
-				B19B91F327FFD75C001BAF41 /* SlicingViewModule */,
 				B0D2D3C627FDD0A80048761D /* Extension */,
 				B0D2D3BD27FDCF440048761D /* Component */,
 				B0D2D3B927FDCEE70048761D /* Data */,
@@ -633,7 +582,7 @@
 		B0F4E5D027FDCA550053CE3B /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				B0BA5C1027F6A690005DAC02 /* AuthApi.swift */,
+				12203F4A2800363400830A7D /* AuthApi.swift */,
 				B00DA4A427F6D24200256682 /* AuthNetworkManager.swift */,
 				B00DA4A927F6D63F00256682 /* AuthNetworkManagerImpl.swift */,
 			);
@@ -680,159 +629,6 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
-		B0FDBFAF27FEA12300F4895C /* TransferModule */ = {
-			isa = PBXGroup;
-			children = (
-				B0FDBFB527FEA16300F4895C /* Router */,
-				B0FDBFB427FEA15A00F4895C /* Entity */,
-				B0FDBFB327FEA15000F4895C /* Presenter */,
-				B0FDBFB227FEA14100F4895C /* Interactor */,
-				B0FDBFB027FEA12D00F4895C /* View */,
-			);
-			path = TransferModule;
-			sourceTree = "<group>";
-		};
-		B0FDBFB027FEA12D00F4895C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B0FDBFB627FEA19F00F4895C /* TransferView.swift */,
-				B0FDBFB827FEA22700F4895C /* TransferViewController.swift */,
-				B0FDBFB927FEA22700F4895C /* TransferViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B0FDBFB227FEA14100F4895C /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		B0FDBFB327FEA15000F4895C /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		B0FDBFB427FEA15A00F4895C /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		B0FDBFB527FEA16300F4895C /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		B19B91F327FFD75C001BAF41 /* SlicingViewModule */ = {
-			isa = PBXGroup;
-			children = (
-				B19B91F427FFD75C001BAF41 /* OtpModule */,
-				B19B91FC27FFD75C001BAF41 /* RegisterModule */,
-				B19B920127FFD75C001BAF41 /* PinModule */,
-			);
-			path = SlicingViewModule;
-			sourceTree = "<group>";
-		};
-		B19B91F427FFD75C001BAF41 /* OtpModule */ = {
-			isa = PBXGroup;
-			children = (
-				B19B91F527FFD75C001BAF41 /* View */,
-			);
-			path = OtpModule;
-			sourceTree = "<group>";
-		};
-		B19B91F527FFD75C001BAF41 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B19B91F627FFD75C001BAF41 /* OtpViewController.xib */,
-				B19B91F727FFD75C001BAF41 /* OtpViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B19B91FC27FFD75C001BAF41 /* RegisterModule */ = {
-			isa = PBXGroup;
-			children = (
-				B19B91FD27FFD75C001BAF41 /* View */,
-			);
-			path = RegisterModule;
-			sourceTree = "<group>";
-		};
-		B19B91FD27FFD75C001BAF41 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B19B91FE27FFD75C001BAF41 /* RegisterViewController.xib */,
-				B19B91FF27FFD75C001BAF41 /* RegisterViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B19B920127FFD75C001BAF41 /* PinModule */ = {
-			isa = PBXGroup;
-			children = (
-				B19B920227FFD75C001BAF41 /* ChangePin */,
-				B19B920427FFD75C001BAF41 /* SetPin */,
-				B19B920827FFD75C001BAF41 /* InputPin */,
-			);
-			path = PinModule;
-			sourceTree = "<group>";
-		};
-		B19B920227FFD75C001BAF41 /* ChangePin */ = {
-			isa = PBXGroup;
-			children = (
-				B19B920327FFD75C001BAF41 /* View */,
-			);
-			path = ChangePin;
-			sourceTree = "<group>";
-		};
-		B19B920327FFD75C001BAF41 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B19B920427FFD75C001BAF41 /* SetPin */ = {
-			isa = PBXGroup;
-			children = (
-				B19B920527FFD75C001BAF41 /* View */,
-			);
-			path = SetPin;
-			sourceTree = "<group>";
-		};
-		B19B920527FFD75C001BAF41 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B19B920627FFD75C001BAF41 /* SetPinViewController.xib */,
-				B19B920727FFD75C001BAF41 /* SetPinViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B19B920827FFD75C001BAF41 /* InputPin */ = {
-			isa = PBXGroup;
-			children = (
-				B19B920927FFD75C001BAF41 /* View */,
-			);
-			path = InputPin;
-			sourceTree = "<group>";
-		};
-		B19B920927FFD75C001BAF41 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B19B920A27FFD75C001BAF41 /* InputPinViewController.xib */,
-				B19B920B27FFD75C001BAF41 /* InputPinViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -851,7 +647,6 @@
 			name = zwallet;
 			packageProductDependencies = (
 				B00DA4A227F6AB7D00256682 /* Moya */,
-				B02C583927FAC0C900C9EA0B /* netfox */,
 				B0D2D3C427FDCFFE0048761D /* Kingfisher */,
 			);
 			productName = zwallet;
@@ -884,7 +679,6 @@
 			mainGroup = B0F0F9E427F3342D00874BCF;
 			packageReferences = (
 				B0BA5C1227F6A74A005DAC02 /* XCRemoteSwiftPackageReference "Moya" */,
-				B02C583827FAC0C900C9EA0B /* XCRemoteSwiftPackageReference "netfox" */,
 				B0D2D3C327FDCFFE0048761D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = B0F0F9EE27F3342D00874BCF /* Products */;
@@ -903,21 +697,16 @@
 			files = (
 				B04F663927FDDE5800825DE8 /* HeaderCell.xib in Resources */,
 				B0F0F9FD27F3342E00874BCF /* LaunchScreen.storyboard in Resources */,
-				B19B921427FFD75C001BAF41 /* InputPinViewController.xib in Resources */,
 				B0F0F9FA27F3342E00874BCF /* Assets.xcassets in Resources */,
 				1279EAF527FD79D20037C8A7 /* RegisterViewController.xib in Resources */,
 				B0D2D3C227FDCF910048761D /* TransactionCell.xib in Resources */,
 				B01228BE27F43F9F009D7F98 /* LoginViewController.xib in Resources */,
 				B04F663D27FDDEEF00825DE8 /* HistoryViewController.xib in Resources */,
 				B0F0FA0A27F337F200874BCF /* NunitoSans-Regular.ttf in Resources */,
-				B19B920C27FFD75C001BAF41 /* OtpViewController.xib in Resources */,
 				B0F4E5C327FDC4080053CE3B /* DashboardCell.xib in Resources */,
 				B0F0F9F827F3342D00874BCF /* Main.storyboard in Resources */,
 				B0F0FA0827F337DD00874BCF /* NunitoSans-Bold.ttf in Resources */,
-				B19B921227FFD75C001BAF41 /* SetPinViewController.xib in Resources */,
-				B19B921027FFD75C001BAF41 /* RegisterViewController.xib in Resources */,
 				B0F4E5CF27FDC7680053CE3B /* HomeViewController.xib in Resources */,
-				B0FDBFBB27FEA22700F4895C /* TransferViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,15 +720,12 @@
 				12E9CEB927FDAED300247CEC /* RegisterViewProtocol.swift in Sources */,
 				B0F4E5D527FDCAD70053CE3B /* BalanceNetworkManager.swift in Sources */,
 				B0D2D3C827FDD0BA0048761D /* IntExtension.swift in Sources */,
-				B0BA5C1127F6A690005DAC02 /* AuthApi.swift in Sources */,
 				B088085427F55666009E35B8 /* LoginViewProtocol.swift in Sources */,
 				B04F663827FDDE5800825DE8 /* HeaderCell.swift in Sources */,
 				B04F663C27FDDEEF00825DE8 /* HistoryViewController.swift in Sources */,
 				B0F4E5B127FDBF760053CE3B /* HomeInteractorOutput.swift in Sources */,
-				B19B921327FFD75C001BAF41 /* SetPinViewController.swift in Sources */,
 				B04F663F27FDE01000825DE8 /* HistoryView.swift in Sources */,
 				B0F4E5E827FDCCE90053CE3B /* InvoiceNetworkManagerImpl.swift in Sources */,
-				B19B921127FFD75C001BAF41 /* RegisterViewController.swift in Sources */,
 				B04F664427FDE06900825DE8 /* HistoryPresenterImpl.swift in Sources */,
 				B04F664127FDE03000825DE8 /* HistoryDataSource.swift in Sources */,
 				B0D2D3CA27FDD0F80048761D /* UIViewExtension.swift in Sources */,
@@ -961,9 +747,9 @@
 				B0F4E5E227FDCCB30053CE3B /* GetInvoiceResponse.swift in Sources */,
 				B0F4E5C227FDC4080053CE3B /* DashboardCell.swift in Sources */,
 				B00DA4AA27F6D63F00256682 /* AuthNetworkManagerImpl.swift in Sources */,
+				12203F4B2800363400830A7D /* AuthApi.swift in Sources */,
 				B0F4E5D327FDCA9D0053CE3B /* BalanceApi.swift in Sources */,
 				B01E55BE27F9597B00949205 /* LoginInteractorOutputProtocol.swift in Sources */,
-				B0FDBFBA27FEA22700F4895C /* TransferViewController.swift in Sources */,
 				B04F664D27FDE10200825DE8 /* HistoryInteractorOutput.swift in Sources */,
 				B0F4E5DA27FDCB5C0053CE3B /* GetBalanceDataResponse.swift in Sources */,
 				B0D2D3C127FDCF910048761D /* TransactionCell.swift in Sources */,
@@ -979,21 +765,17 @@
 				B04F664927FDE0C100825DE8 /* HistoryInteractorImpl.swift in Sources */,
 				B0D2D3BC27FDCEFE0048761D /* TransactionEntity.swift in Sources */,
 				B0F0FA0527F3350700874BCF /* LoginViewController2.swift in Sources */,
-				B0FDBFB727FEA19F00F4895C /* TransferView.swift in Sources */,
 				B0F0F9F527F3342D00874BCF /* ViewController.swift in Sources */,
 				12E9CEB527FDAD7500247CEC /* RegisterPresenterProtocol.swift in Sources */,
 				B02C583E27FAD56600C9EA0B /* AppConstant.swift in Sources */,
 				B0C62DF327F9F23A00B1732D /* UserDefaultHelper.swift in Sources */,
-				1270F62227FF2B7800956DE3 /* TransferNetworkManager.swift in Sources */,
 				B00DA4A827F6D37E00256682 /* LoginDataResponse.swift in Sources */,
 				12E9CEAD27FDA6AC00247CEC /* RegisterRouterProtocol.swift in Sources */,
 				B01E55C027F95CD200949205 /* LoginInteractorImpl.swift in Sources */,
 				B0F0F9F127F3342D00874BCF /* AppDelegate.swift in Sources */,
 				12E9CEAF27FDA9B000247CEC /* RegisterInteractorProtocol.swift in Sources */,
-				1270F62427FF2B8C00956DE3 /* TransferNetworkManagerImpl.swift in Sources */,
 				12E9CEB327FDAB2500247CEC /* RegisterInteractorOutput.swift in Sources */,
 				12E9CEAB27FDA69300247CEC /* RegisterRouterImpl.swift in Sources */,
-				B19B921527FFD75C001BAF41 /* InputPinViewController.swift in Sources */,
 				B01E55C027F95CD200949205 /* LoginInteractorImpl.swift in Sources */,
 				B0F0F9F127F3342D00874BCF /* AppDelegate.swift in Sources */,
 				B0F4E5A527FDBE6F0053CE3B /* HomeRouter.swift in Sources */,
@@ -1003,7 +785,6 @@
 				B01E55BC27F953D800949205 /* LoginRouterProtocol.swift in Sources */,
 				B04F665027FDE15F00825DE8 /* HistoryRouterImpl.swift in Sources */,
 				B04F664627FDE07900825DE8 /* HistoryPresenter.swift in Sources */,
-				B19B920D27FFD75C001BAF41 /* OtpViewController.swift in Sources */,
 				B0F4E5B427FDBFBC0053CE3B /* HomePresenterImpl.swift in Sources */,
 				B01E55BA27F953BF00949205 /* LoginInteractorProtocol.swift in Sources */,
 			);
@@ -1152,8 +933,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = zwallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1167,6 +949,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yudhi.zwallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1178,8 +961,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = zwallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1193,6 +977,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yudhi.zwallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1223,14 +1008,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B02C583827FAC0C900C9EA0B /* XCRemoteSwiftPackageReference "netfox" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kasketis/netfox";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
 		B0BA5C1227F6A74A005DAC02 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya";
@@ -1254,11 +1031,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B0BA5C1227F6A74A005DAC02 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
-		};
-		B02C583927FAC0C900C9EA0B /* netfox */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B02C583827FAC0C900C9EA0B /* XCRemoteSwiftPackageReference "netfox" */;
-			productName = netfox;
 		};
 		B0D2D3C427FDCFFE0048761D /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -3,11 +3,15 @@
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
         <array key="NunitoSans-Regular.ttf">
             <string>NunitoSans-Regular</string>
         </array>
@@ -15,6 +19,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="zwallet" customModuleProvider="target">
             <connections>
+                <outlet property="contentView" destination="V4b-Dm-2vi" id="Yng-Ww-kSk"/>
                 <outlet property="emailImage" destination="g7T-uM-CeH" id="efh-lk-fZZ"/>
                 <outlet property="emailUnderline" destination="Fb5-3p-THa" id="d26-bX-037"/>
                 <outlet property="eyeSlashButton" destination="AZr-I3-NV3" id="WZw-3E-GQB"/>
@@ -38,28 +43,28 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zwallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qg-UN-spJ">
-                    <rect key="frame" x="8" y="123.99999999999999" width="412" height="26.333333333333329"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <rect key="frame" x="8" y="124.00000000000001" width="412" height="35.666666666666671"/>
+                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="26"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4b-Dm-2vi">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4b-Dm-2vi" userLabel="ContentView">
                     <rect key="frame" x="0.0" y="244" width="428" height="648"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibu-il-O6e">
-                            <rect key="frame" x="8" y="40" width="412" height="26.333333333333329"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <rect key="frame" x="8" y="40" width="412" height="33"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register your account to access ZWallet" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaR-kb-si9">
-                            <rect key="frame" x="20" y="86.333333333333314" width="388" height="19.333333333333329"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <rect key="frame" x="20" y="93" width="388" height="22"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
                             <color key="textColor" systemColor="systemGray2Color"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="C91-kq-RSa" userLabel="UsernameStackView">
-                            <rect key="frame" x="8" y="145.66666666666669" width="412" height="52"/>
+                            <rect key="frame" x="8" y="155" width="412" height="52"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6s-Qj-hlv">
                                     <rect key="frame" x="0.0" y="0.0" width="412" height="50"/>
@@ -100,7 +105,7 @@
                             <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6O3-KY-YPA" userLabel="EmailStackView">
-                            <rect key="frame" x="8" y="217.66666666666669" width="412" height="52"/>
+                            <rect key="frame" x="8" y="227" width="412" height="52"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTa-Gg-gWz">
                                     <rect key="frame" x="0.0" y="0.0" width="412" height="50"/>
@@ -141,7 +146,7 @@
                             <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0b4-33-ykZ" userLabel="PasswordStackView">
-                            <rect key="frame" x="8" y="289.66666666666663" width="412" height="52"/>
+                            <rect key="frame" x="8" y="299" width="412" height="52"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1N-UB-eVt">
                                     <rect key="frame" x="0.0" y="0.0" width="412" height="50"/>
@@ -194,7 +199,7 @@
                             <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yy-vq-mvf" userLabel="SignUp">
-                            <rect key="frame" x="8" y="539.66666666666663" width="412" height="50"/>
+                            <rect key="frame" x="8" y="532" width="412" height="50"/>
                             <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="Ddy-sy-HYn"/>
@@ -207,22 +212,22 @@
                             </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yfe-d0-e7v">
-                            <rect key="frame" x="8" y="599.66666666666663" width="412" height="28.333333333333371"/>
+                            <rect key="frame" x="8" y="592" width="412" height="36"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have account?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhL-Cf-OKR">
-                                    <rect key="frame" x="0.0" y="0.0" width="292" height="28.333333333333332"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="292" height="36"/>
+                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ltu-E9-VEI">
-                                    <rect key="frame" x="292" y="0.0" width="120" height="28.333333333333332"/>
+                                    <rect key="frame" x="292" y="0.0" width="120" height="36"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="120" id="66D-z7-x9x"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Sign In">
-                                        <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="titleFontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
                                     </buttonConfiguration>
                                     <connections>
                                         <action selector="signInButtonAction:" destination="-1" eventType="touchUpInside" id="RHs-by-TiA"/>
@@ -260,7 +265,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="FvQ-pe-bYL"/>
-            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <color key="backgroundColor" name="BackgroundColor"/>
             <constraints>
                 <constraint firstItem="7qg-UN-spJ" firstAttribute="top" secondItem="FvQ-pe-bYL" secondAttribute="top" constant="80" id="0es-VJ-HbX"/>
                 <constraint firstAttribute="trailing" secondItem="V4b-Dm-2vi" secondAttribute="trailing" id="8N5-6r-os7"/>
@@ -278,6 +283,9 @@
         <image name="eye.slash" catalog="system" width="128" height="86"/>
         <image name="lock" catalog="system" width="128" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.91764705882352937" green="0.92941176470588238" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -292,9 +300,6 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

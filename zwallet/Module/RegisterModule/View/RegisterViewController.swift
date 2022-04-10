@@ -26,6 +26,8 @@ class RegisterViewController: UIViewController  {
     @IBOutlet weak var zwalletLabel: UILabel!
     @IBOutlet weak var signUpDescLabel: UILabel!
     
+    @IBOutlet weak var contentView: UIView!
+    
     var presenter: RegisterPresenterProtocol?
     
     override func viewDidLoad() {
@@ -40,6 +42,40 @@ class RegisterViewController: UIViewController  {
         self.inputUsername.textColor = UIColor(named: "Black")
         self.inputEmail.textColor = UIColor(named: "Black")
         self.inputPassword.textColor = UIColor(named: "Black")
+        
+        let corners = UIRectCorner(arrayLiteral: [
+            UIRectCorner.topLeft,
+            UIRectCorner.topRight,
+            UIRectCorner.bottomLeft,
+            UIRectCorner.bottomRight
+        ])
+        
+        let cornerRadii = CGSize(
+            width: 30,
+            height: 30
+        )
+        
+        let maskPath = UIBezierPath(
+            roundedRect: contentView.bounds,
+            byRoundingCorners: corners,
+            cornerRadii: cornerRadii
+        )
+        
+        let maskPathButton = UIBezierPath(
+            roundedRect: signUpButton.bounds,
+            byRoundingCorners: corners,
+            cornerRadii: cornerRadii
+        )
+        
+        let maskLayer = CAShapeLayer()
+        maskLayer.path = maskPath.cgPath
+        maskLayer.frame = contentView.bounds
+        contentView.layer.mask = maskLayer
+        
+        let maskLayerButton = CAShapeLayer()
+        maskLayerButton.path = maskPathButton.cgPath
+        maskLayerButton.frame = signUpButton.bounds
+        signUpButton.layer.mask = maskLayerButton
     }
     
     @IBAction func eyeSlashButtonAction(_ sender: Any) {

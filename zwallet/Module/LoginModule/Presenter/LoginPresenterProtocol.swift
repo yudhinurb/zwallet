@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import UIKit
 
 protocol LoginPresenterProtocol{
     func login(email: String, password: String)
+    func registerPage(viewController: UIViewController)
 }

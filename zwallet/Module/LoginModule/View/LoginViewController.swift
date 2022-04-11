@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordLineView: UIView!
     @IBOutlet weak var eyeSlashButton: UIButton!
     @IBOutlet weak var errorMessage: UILabel!
+    @IBOutlet weak var signUpButton: UIButton!
     
     var presenter: LoginPresenterProtocol?
     
@@ -73,13 +74,17 @@ class LoginViewController: UIViewController {
             inputPasswordField.isSecureTextEntry = true
             eyeSlashButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
         }
-        
     }
     @IBAction func buttonLoginAction(_ sender: UIButton) {
         let email: String = inputEmailField.text ?? ""
         let password: String = inputPasswordField.text ?? ""
         
         self.presenter?.login(email: email, password: password)
+    }
+    
+    @IBAction func buttonSignUpAction(_ sender: Any) {
+        self.presenter?.registerPage(viewController: self)
+
     }
 }
 
@@ -113,6 +118,7 @@ extension LoginViewController: UITextFieldDelegate {
             passwordLineView.backgroundColor = UIColor(named: "Primary")
         }
     }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == inputEmailField {
             if inputEmailField.text == "" {
@@ -126,6 +132,7 @@ extension LoginViewController: UITextFieldDelegate {
             }
         }
     }
+    
     func textFieldDidChangeSelection(_ textField: UITextField) {
         if textField == inputEmailField {
             if inputEmailField.text == "" {

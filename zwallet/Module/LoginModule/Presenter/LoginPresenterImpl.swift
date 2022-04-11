@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class LoginPresenterImpl: LoginPresenterProtocol{
     let view: LoginViewProtocol
@@ -21,6 +22,11 @@ class LoginPresenterImpl: LoginPresenterProtocol{
     func login(email: String, password: String) {
         self.interactor.postLoginData(email: email, password: password)
     }
+    
+    
+    func registerPage(viewController: UIViewController) {
+        self.router.navigateToRegister(viewController: viewController)
+    }
 }
 
 extension LoginPresenterImpl: LoginInteractorOutputProtocol{
@@ -31,6 +37,4 @@ extension LoginPresenterImpl: LoginInteractorOutputProtocol{
             self.view.showError()
         }
     }
-    
-    
 }

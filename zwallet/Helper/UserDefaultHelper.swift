@@ -29,5 +29,6 @@ public class UserDefaultHelper {
 public extension UserDefaultHelper {
     enum Key: String {
         case userToken
+        case userEmail
     }
 }

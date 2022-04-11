@@ -29,9 +29,11 @@ public class LoginRouterImpl {
 }
 
 extension LoginRouterImpl: LoginRouterProtocol {
-
     func navigateToHome() {
         NotificationCenter.default.post(name: Notification.Name("reloadRootView"), object: nil)
     }
 
+    func navigateToRegister(viewController: UIViewController) {
+        RegisterRouterImpl.navigateToModule(viewController: viewController)
+    }
 }

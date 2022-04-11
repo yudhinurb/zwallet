@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetPinViewController" customModule="zwallet" customModuleProvider="target">
+            <connections>
+                <outlet property="formWrapper" destination="inL-kR-a8Y" id="5dm-YN-U5I"/>
+                <outlet property="pin1" destination="cIT-XJ-GSj" id="qKh-S2-TUE"/>
+                <outlet property="pin2" destination="eIt-ti-U44" id="fbr-ag-54y"/>
+                <outlet property="pin3" destination="QQz-RA-j1F" id="k3t-pw-wVZ"/>
+                <outlet property="pin4" destination="b6x-ai-aWD" id="vwh-cA-ZKS"/>
+                <outlet property="pin5" destination="sxx-IX-fvv" id="NC3-Ke-yYx"/>
+                <outlet property="pin6" destination="D8A-dd-Gja" id="GI7-ZL-VeX"/>
+                <outlet property="submitButton" destination="0mg-bb-Te4" id="Rqa-Lq-EHr"/>
+                <outlet property="view" destination="BIO-9O-NEk" id="nG7-PK-4c6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="BIO-9O-NEk">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZWallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vd-ZL-TuP">
+                    <rect key="frame" x="160.5" y="119" width="93" height="31.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                    <color key="textColor" name="primaryColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inL-kR-a8Y" userLabel="formWrapper">
+                    <rect key="frame" x="0.0" y="210.5" width="414" height="651.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Security PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYv-Uf-C6r">
+                            <rect key="frame" x="103" y="40" width="208" height="29"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUM-MB-zwu">
+                            <rect key="frame" x="49.5" y="89" width="315" height="38.5"/>
+                            <string key="text">Create a PIN that’s contain 6 digits number for security purpose in Zwallet.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" name="descriptionColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dlU-py-zs2" userLabel="formOtp">
+                            <rect key="frame" x="16" y="177.5" width="382" height="60"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Aql-yQ-zRP" userLabel="otp">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="60"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="_" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIT-XJ-GSj" userLabel="otp1">
+                                            <rect key="frame" x="0.0" y="0.0" width="59.5" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="IuT-BN-VHF"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES" textContentType="one-time-code"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="_" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIt-ti-U44" userLabel="otp2">
+                                            <rect key="frame" x="64.5" y="0.0" width="59.5" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="QKL-in-ByR"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES" textContentType="one-time-code"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="_" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QQz-RA-j1F" userLabel="otp3">
+                                            <rect key="frame" x="129" y="0.0" width="59.5" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="Huc-SG-Z8t"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES" textContentType="one-time-code"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="_" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b6x-ai-aWD" userLabel="otp4">
+                                            <rect key="frame" x="193.5" y="0.0" width="59.5" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="J02-hP-DmO"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES" textContentType="one-time-code"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="_" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxx-IX-fvv" userLabel="otp5">
+                                            <rect key="frame" x="258" y="0.0" width="59.5" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="Ipi-CP-kHl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES" textContentType="one-time-code"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="_" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D8A-dd-Gja" userLabel="otp6">
+                                            <rect key="frame" x="322.5" y="0.0" width="59.5" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="z4d-7Q-p55"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES" textContentType="one-time-code"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="dTY-w8-wDs"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mg-bb-Te4">
+                            <rect key="frame" x="16" y="584.5" width="382" height="57"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="57" id="NN7-Lr-uq1"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Confirm" cornerStyle="large">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                <color key="baseForegroundColor" name="titleDarkColor"/>
+                                <color key="baseBackgroundColor" name="descriptionColor"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="dlU-py-zs2" firstAttribute="leading" secondItem="inL-kR-a8Y" secondAttribute="leading" constant="16" id="3q3-cS-KI5"/>
+                        <constraint firstAttribute="trailing" secondItem="dlU-py-zs2" secondAttribute="trailing" constant="16" id="51f-oG-IOD"/>
+                        <constraint firstItem="0mg-bb-Te4" firstAttribute="leading" secondItem="inL-kR-a8Y" secondAttribute="leading" constant="16" id="79K-ww-0ac"/>
+                        <constraint firstItem="BUM-MB-zwu" firstAttribute="top" secondItem="CYv-Uf-C6r" secondAttribute="bottom" constant="20" id="JKy-oQ-KPC"/>
+                        <constraint firstItem="CYv-Uf-C6r" firstAttribute="centerX" secondItem="inL-kR-a8Y" secondAttribute="centerX" id="UbH-sg-6bH"/>
+                        <constraint firstAttribute="trailing" secondItem="0mg-bb-Te4" secondAttribute="trailing" constant="16" id="Y2N-o0-F8Z"/>
+                        <constraint firstAttribute="bottom" secondItem="0mg-bb-Te4" secondAttribute="bottom" constant="10" id="Y2W-eH-nbh"/>
+                        <constraint firstItem="BUM-MB-zwu" firstAttribute="centerX" secondItem="inL-kR-a8Y" secondAttribute="centerX" id="gfD-cu-XGS"/>
+                        <constraint firstItem="dlU-py-zs2" firstAttribute="top" secondItem="BUM-MB-zwu" secondAttribute="bottom" constant="50" id="pAd-qY-FYe"/>
+                        <constraint firstItem="CYv-Uf-C6r" firstAttribute="top" secondItem="inL-kR-a8Y" secondAttribute="top" constant="40" id="tPf-v1-CvL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="hzb-xd-KDd"/>
+            <color key="backgroundColor" name="backgrounfColor"/>
+            <constraints>
+                <constraint firstItem="inL-kR-a8Y" firstAttribute="top" secondItem="4Vd-ZL-TuP" secondAttribute="bottom" constant="60" id="4W9-eu-2Pe"/>
+                <constraint firstItem="hzb-xd-KDd" firstAttribute="trailing" secondItem="inL-kR-a8Y" secondAttribute="trailing" id="S6Q-Wz-vXA"/>
+                <constraint firstItem="4Vd-ZL-TuP" firstAttribute="centerX" secondItem="BIO-9O-NEk" secondAttribute="centerX" id="dIf-2x-6we"/>
+                <constraint firstItem="4Vd-ZL-TuP" firstAttribute="top" secondItem="hzb-xd-KDd" secondAttribute="top" constant="75" id="dax-bl-Q3U"/>
+                <constraint firstItem="hzb-xd-KDd" firstAttribute="bottom" secondItem="inL-kR-a8Y" secondAttribute="bottom" id="iek-ej-POO"/>
+                <constraint firstItem="inL-kR-a8Y" firstAttribute="leading" secondItem="hzb-xd-KDd" secondAttribute="leading" id="xqW-hx-NIV"/>
+            </constraints>
+            <point key="canvasLocation" x="-465" y="143"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="backgrounfColor">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="descriptionColor">
+            <color red="0.22745098039215686" green="0.23921568627450981" blue="0.25882352941176473" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryColor">
+            <color red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="titleDarkColor">
+            <color red="0.22745098039215686" green="0.23921568627450981" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

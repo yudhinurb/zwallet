@@ -11,4 +11,5 @@ import UIKit
 protocol RegisterPresenterProtocol {
     func register(username: String, email: String, password: String)
     func loginPage(viewController: UIViewController)
+    func dismissPage(vc: UIViewController)
 }

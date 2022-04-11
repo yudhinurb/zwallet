@@ -62,18 +62,6 @@ extension TransferViewController: UITextFieldDelegate {
                 transferButton.isEnabled = true
             }
         }
-        
-//        if textField == notesField {
-//            if notesField.text?.count ?? 0 < 10 {
-//                transferButton.backgroundColor = UIColor(named: "GrayButton")
-//                transferButton.titleLabel?.textColor = UIColor(named: "DarkGrayText")
-//                transferButton.isEnabled = false
-//            } else {
-//                transferButton.backgroundColor = UIColor(named: "Primary")
-//                transferButton.titleLabel?.textColor = UIColor(ciColor: .white)
-//                transferButton.isEnabled = true
-//            }
-//        }
     }
 }
 

@@ -27,12 +27,18 @@ class RegisterPresenterImpl: RegisterPresenterProtocol {
     func loginPage(viewController: UIViewController) {
         self.router.navigateToLogin(viewController: viewController)
     }
+    
+    func dismissPage(vc: UIViewController) {
+        self.router.navigateToLogin(viewController: vc)
+    }
 }
 
 extension RegisterPresenterImpl: RegisterInteractorOutput {
     func authRegisterResult(isSuccess: Bool, message: String) {
-        
+        if isSuccess {
+            self.view.showSuccess()
+        } else {
+            self.view.showError()
+        }
     }
-    
-    
 }

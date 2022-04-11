@@ -9,5 +9,6 @@ import Foundation
 
 
 protocol RegisterViewProtocol {
-    
+    func showSuccess()
+    func showError()
 }

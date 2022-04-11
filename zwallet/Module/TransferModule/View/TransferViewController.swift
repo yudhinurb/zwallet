@@ -9,6 +9,7 @@ import UIKit
 
 class TransferViewController: UIViewController {
 
+    @IBOutlet weak var transferButton: UIButton!
     @IBOutlet weak var notesField: UITextField!
     @IBOutlet weak var balanceLabel: UILabel!
     @IBOutlet weak var amountLabel: UITextField!
@@ -21,7 +22,8 @@ class TransferViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        amountLabel.delegate = self
+        notesField.delegate = self
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -45,6 +47,34 @@ class TransferViewController: UIViewController {
         self.presenter?.transfer(receiver: receiver, amount: amount ?? 0, notes: notes)
     }
 
+}
+
+extension TransferViewController: UITextFieldDelegate {
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        if (textField == amountLabel) || (textField == notesField) {
+            if (amountLabel.text == "") || (notesField.text?.count ?? 0 < 10) {
+                transferButton.backgroundColor = UIColor(named: "GrayButton")
+                transferButton.titleLabel?.textColor = UIColor(named: "DarkGrayText")
+                transferButton.isEnabled = false
+            } else {
+                transferButton.backgroundColor = UIColor(named: "Primary")
+                transferButton.titleLabel?.textColor = UIColor(ciColor: .white)
+                transferButton.isEnabled = true
+            }
+        }
+        
+//        if textField == notesField {
+//            if notesField.text?.count ?? 0 < 10 {
+//                transferButton.backgroundColor = UIColor(named: "GrayButton")
+//                transferButton.titleLabel?.textColor = UIColor(named: "DarkGrayText")
+//                transferButton.isEnabled = false
+//            } else {
+//                transferButton.backgroundColor = UIColor(named: "Primary")
+//                transferButton.titleLabel?.textColor = UIColor(ciColor: .white)
+//                transferButton.isEnabled = true
+//            }
+//        }
+    }
 }
 
 extension TransferViewController: TransferView {

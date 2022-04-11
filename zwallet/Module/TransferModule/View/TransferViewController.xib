@@ -17,6 +17,7 @@
                 <outlet property="receiverImage" destination="zFP-Tv-qDH" id="4F6-NT-as5"/>
                 <outlet property="receiverName" destination="MT4-YP-KDW" id="vO0-oC-iIm"/>
                 <outlet property="receiverPhoneNumber" destination="XUJ-QW-yIG" id="ZTt-hb-1Lx"/>
+                <outlet property="transferButton" destination="dYS-Mi-iza" id="zd4-9v-WEX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -109,8 +110,8 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYS-Mi-iza">
                     <rect key="frame" x="16" y="808.5" width="382" height="43.5"/>
-                    <color key="backgroundColor" name="Primary"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" name="GrayButton"/>
+                    <color key="tintColor" name="DarkGrayText"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Transfer"/>
                     <userDefinedRuntimeAttributes>
@@ -148,6 +149,12 @@
     </objects>
     <resources>
         <image name="user" width="56" height="56"/>
+        <namedColor name="DarkGrayText">
+            <color red="0.47843137254901963" green="0.47058823529411764" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayButton">
+            <color red="0.77600002288818359" green="0.77600002288818359" blue="0.78400003910064697" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Primary">
             <color red="0.38699999451637268" green="0.47400000691413879" blue="0.95800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

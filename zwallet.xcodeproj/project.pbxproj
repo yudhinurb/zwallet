@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1212956B2803D2460015719C /* TransferDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212955C2803D2460015719C /* TransferDataResponse.swift */; };
+		1212956C2803D2460015719C /* TransferPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212955E2803D2460015719C /* TransferPresenterImpl.swift */; };
+		1212956D2803D2460015719C /* TransferPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212955F2803D2460015719C /* TransferPresenterProtocol.swift */; };
+		1212956E2803D2460015719C /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121295612803D2460015719C /* TransferViewController.swift */; };
+		1212956F2803D2460015719C /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121295622803D2460015719C /* TransferView.swift */; };
+		121295702803D2460015719C /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 121295632803D2460015719C /* TransferViewController.xib */; };
+		121295712803D2460015719C /* TransferInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121295652803D2460015719C /* TransferInteractorProtocol.swift */; };
+		121295722803D2460015719C /* TransferInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121295662803D2460015719C /* TransferInteractorImpl.swift */; };
+		121295732803D2460015719C /* TransferInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121295672803D2460015719C /* TransferInteractorOutput.swift */; };
+		121295742803D2460015719C /* TransferRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121295692803D2460015719C /* TransferRouterImpl.swift */; };
+		121295752803D2460015719C /* TransferRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212956A2803D2460015719C /* TransferRouterProtocol.swift */; };
+		121295782803D5C90015719C /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = 121295772803D5C90015719C /* netfox */; };
 		12203F4B2800363400830A7D /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12203F4A2800363400830A7D /* AuthApi.swift */; };
 		12632F5727FDEF4000CBDC9F /* RegisterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12632F5627FDEF4000CBDC9F /* RegisterEntity.swift */; };
 		1279EAF427FD79D20037C8A7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279EAF227FD79D20037C8A7 /* RegisterViewController.swift */; };
@@ -34,8 +46,6 @@
 		B01E55C227F96C0500949205 /* LoginRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E55C127F96C0500949205 /* LoginRouterImpl.swift */; };
 		B02C583C27FAD2B100C9EA0B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C583B27FAD2B100C9EA0B /* AppRouter.swift */; };
 		B02C583E27FAD56600C9EA0B /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C583D27FAD56600C9EA0B /* AppConstant.swift */; };
-		B030919127FFDD7E00201E38 /* TransferPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B030919027FFDD7E00201E38 /* TransferPresenterImpl.swift */; };
-		B030919327FFDDEE00201E38 /* TransferRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B030919227FFDDEE00201E38 /* TransferRouterImpl.swift */; };
 		B04F663827FDDE5800825DE8 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F663627FDDE5800825DE8 /* HeaderCell.swift */; };
 		B04F663927FDDE5800825DE8 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04F663727FDDE5800825DE8 /* HeaderCell.xib */; };
 		B04F663C27FDDEEF00825DE8 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F663A27FDDEEF00825DE8 /* HistoryViewController.swift */; };
@@ -91,22 +101,23 @@
 		B0F4E5E427FDCCC50053CE3B /* InvoiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4E5E327FDCCC50053CE3B /* InvoiceApi.swift */; };
 		B0F4E5E627FDCCD40053CE3B /* InvoiceNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4E5E527FDCCD40053CE3B /* InvoiceNetworkManager.swift */; };
 		B0F4E5E827FDCCE90053CE3B /* InvoiceNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4E5E727FDCCE90053CE3B /* InvoiceNetworkManagerImpl.swift */; };
-		B0FDBFB727FEA19F00F4895C /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFB627FEA19F00F4895C /* TransferView.swift */; };
-		B0FDBFBA27FEA22700F4895C /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFB827FEA22700F4895C /* TransferViewController.swift */; };
-		B0FDBFBB27FEA22700F4895C /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0FDBFB927FEA22700F4895C /* TransferViewController.xib */; };
-		B0FDBFBD27FEC6C700F4895C /* TransferPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFBC27FEC6C700F4895C /* TransferPresenterProtocol.swift */; };
-		B0FDBFBF27FEC6E400F4895C /* TransferInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFBE27FEC6E400F4895C /* TransferInteractorProtocol.swift */; };
-		B0FDBFC127FEC6F700F4895C /* TransferRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFC027FEC6F700F4895C /* TransferRouterProtocol.swift */; };
 		B0FDBFC427FEC74300F4895C /* TransferApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFC327FEC74300F4895C /* TransferApi.swift */; };
 		B0FDBFC627FEC75A00F4895C /* TransferNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFC527FEC75A00F4895C /* TransferNetworkManager.swift */; };
 		B0FDBFC827FEC77800F4895C /* TransferNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFC727FEC77800F4895C /* TransferNetworkManagerImpl.swift */; };
-		B0FDBFCA27FEC96B00F4895C /* TransferDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFC927FEC96B00F4895C /* TransferDataResponse.swift */; };
-		B0FDBFCC27FECE9B00F4895C /* TransferInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFCB27FECE9B00F4895C /* TransferInteractorImpl.swift */; };
-		B0FDBFCE27FECF3C00F4895C /* TransferInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDBFCD27FECF3C00F4895C /* TransferInteractorOutput.swift */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1212955C2803D2460015719C /* TransferDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferDataResponse.swift; sourceTree = "<group>"; };
+		1212955E2803D2460015719C /* TransferPresenterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferPresenterImpl.swift; sourceTree = "<group>"; };
+		1212955F2803D2460015719C /* TransferPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferPresenterProtocol.swift; sourceTree = "<group>"; };
+		121295612803D2460015719C /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
+		121295622803D2460015719C /* TransferView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
+		121295632803D2460015719C /* TransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
+		121295652803D2460015719C /* TransferInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferInteractorProtocol.swift; sourceTree = "<group>"; };
+		121295662803D2460015719C /* TransferInteractorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferInteractorImpl.swift; sourceTree = "<group>"; };
+		121295672803D2460015719C /* TransferInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferInteractorOutput.swift; sourceTree = "<group>"; };
+		121295692803D2460015719C /* TransferRouterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferRouterImpl.swift; sourceTree = "<group>"; };
+		1212956A2803D2460015719C /* TransferRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferRouterProtocol.swift; sourceTree = "<group>"; };
 		12203F4A2800363400830A7D /* AuthApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
 		12632F5627FDEF4000CBDC9F /* RegisterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEntity.swift; sourceTree = "<group>"; };
 		1279EAF227FD79D20037C8A7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -191,10 +202,6 @@
 		B0F4E5E327FDCCC50053CE3B /* InvoiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceApi.swift; sourceTree = "<group>"; };
 		B0F4E5E527FDCCD40053CE3B /* InvoiceNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceNetworkManager.swift; sourceTree = "<group>"; };
 		B0F4E5E727FDCCE90053CE3B /* InvoiceNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceNetworkManagerImpl.swift; sourceTree = "<group>"; };
-
-		B0FDBFB627FEA19F00F4895C /* TransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
-		B0FDBFB827FEA22700F4895C /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
-		B0FDBFB927FEA22700F4895C /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
 		B0FDBFBC27FEC6C700F4895C /* TransferPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferPresenterProtocol.swift; sourceTree = "<group>"; };
 		B0FDBFBE27FEC6E400F4895C /* TransferInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferInteractorProtocol.swift; sourceTree = "<group>"; };
 		B0FDBFC027FEC6F700F4895C /* TransferRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferRouterProtocol.swift; sourceTree = "<group>"; };
@@ -204,7 +211,6 @@
 		B0FDBFC927FEC96B00F4895C /* TransferDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDataResponse.swift; sourceTree = "<group>"; };
 		B0FDBFCB27FECE9B00F4895C /* TransferInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferInteractorImpl.swift; sourceTree = "<group>"; };
 		B0FDBFCD27FECF3C00F4895C /* TransferInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferInteractorOutput.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,12 +220,86 @@
 			files = (
 				B0D2D3C527FDCFFE0048761D /* Kingfisher in Frameworks */,
 				B00DA4A327F6AB7D00256682 /* Moya in Frameworks */,
+				121295782803D5C90015719C /* netfox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121295592803D1C20015719C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				B0FDBFBC27FEC6C700F4895C /* TransferPresenterProtocol.swift */,
+				B0FDBFCD27FECF3C00F4895C /* TransferInteractorOutput.swift */,
+				B030919027FFDD7E00201E38 /* TransferPresenterImpl.swift */,
+				B030919227FFDDEE00201E38 /* TransferRouterImpl.swift */,
+				B0FDBFBE27FEC6E400F4895C /* TransferInteractorProtocol.swift */,
+				B0FDBFC027FEC6F700F4895C /* TransferRouterProtocol.swift */,
+				B0FDBFC927FEC96B00F4895C /* TransferDataResponse.swift */,
+				B0FDBFCB27FECE9B00F4895C /* TransferInteractorImpl.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		1212955A2803D2460015719C /* TransferModule */ = {
+			isa = PBXGroup;
+			children = (
+				1212955B2803D2460015719C /* Entity */,
+				1212955D2803D2460015719C /* Presenter */,
+				121295602803D2460015719C /* View */,
+				121295642803D2460015719C /* Interactor */,
+				121295682803D2460015719C /* Router */,
+			);
+			path = TransferModule;
+			sourceTree = "<group>";
+		};
+		1212955B2803D2460015719C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1212955C2803D2460015719C /* TransferDataResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		1212955D2803D2460015719C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1212955E2803D2460015719C /* TransferPresenterImpl.swift */,
+				1212955F2803D2460015719C /* TransferPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		121295602803D2460015719C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				121295612803D2460015719C /* TransferViewController.swift */,
+				121295622803D2460015719C /* TransferView.swift */,
+				121295632803D2460015719C /* TransferViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		121295642803D2460015719C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				121295652803D2460015719C /* TransferInteractorProtocol.swift */,
+				121295662803D2460015719C /* TransferInteractorImpl.swift */,
+				121295672803D2460015719C /* TransferInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		121295682803D2460015719C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				121295692803D2460015719C /* TransferRouterImpl.swift */,
+				1212956A2803D2460015719C /* TransferRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		12632F5327FDEC9500CBDC9F /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +376,7 @@
 		B01228AF27F43089009D7F98 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				1212955A2803D2460015719C /* TransferModule */,
 				1279EAF027FD79A80037C8A7 /* RegisterModule */,
 				B04F663227FDDDA800825DE8 /* HistoryModule */,
 				B0F4E5A227FDBDF50053CE3B /* HomeModule */,
@@ -491,6 +572,7 @@
 				B0F0F9EF27F3342D00874BCF /* zwallet */,
 				B0F0F9EE27F3342D00874BCF /* Products */,
 				B00DA4A127F6AB7D00256682 /* Frameworks */,
+				121295592803D1C20015719C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -661,65 +743,6 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
-
-		B0FDBFAF27FEA12300F4895C /* TransferModule */ = {
-			isa = PBXGroup;
-			children = (
-				B0FDBFB527FEA16300F4895C /* Router */,
-				B0FDBFB427FEA15A00F4895C /* Entity */,
-				B0FDBFB327FEA15000F4895C /* Presenter */,
-				B0FDBFB227FEA14100F4895C /* Interactor */,
-				B0FDBFB027FEA12D00F4895C /* View */,
-			);
-			path = TransferModule;
-			sourceTree = "<group>";
-		};
-		B0FDBFB027FEA12D00F4895C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B0FDBFB627FEA19F00F4895C /* TransferView.swift */,
-				B0FDBFB827FEA22700F4895C /* TransferViewController.swift */,
-				B0FDBFB927FEA22700F4895C /* TransferViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B0FDBFB227FEA14100F4895C /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				B0FDBFBE27FEC6E400F4895C /* TransferInteractorProtocol.swift */,
-				B0FDBFCB27FECE9B00F4895C /* TransferInteractorImpl.swift */,
-				B0FDBFCD27FECF3C00F4895C /* TransferInteractorOutput.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		B0FDBFB327FEA15000F4895C /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				B0FDBFBC27FEC6C700F4895C /* TransferPresenterProtocol.swift */,
-				B030919027FFDD7E00201E38 /* TransferPresenterImpl.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		B0FDBFB427FEA15A00F4895C /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				B0FDBFC927FEC96B00F4895C /* TransferDataResponse.swift */,
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		B0FDBFB527FEA16300F4895C /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				B0FDBFC027FEC6F700F4895C /* TransferRouterProtocol.swift */,
-				B030919227FFDDEE00201E38 /* TransferRouterImpl.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		B0FDBFC227FEC71D00F4895C /* Transfer */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,7 +753,6 @@
 			path = Transfer;
 			sourceTree = "<group>";
 		};
-
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -750,6 +772,7 @@
 			packageProductDependencies = (
 				B00DA4A227F6AB7D00256682 /* Moya */,
 				B0D2D3C427FDCFFE0048761D /* Kingfisher */,
+				121295772803D5C90015719C /* netfox */,
 			);
 			productName = zwallet;
 			productReference = B0F0F9ED27F3342D00874BCF /* zwallet.app */;
@@ -782,6 +805,7 @@
 			packageReferences = (
 				B0BA5C1227F6A74A005DAC02 /* XCRemoteSwiftPackageReference "Moya" */,
 				B0D2D3C327FDCFFE0048761D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				121295762803D5C90015719C /* XCRemoteSwiftPackageReference "netfox" */,
 			);
 			productRefGroup = B0F0F9EE27F3342D00874BCF /* Products */;
 			projectDirPath = "";
@@ -805,6 +829,7 @@
 				B01228BE27F43F9F009D7F98 /* LoginViewController.xib in Resources */,
 				B04F663D27FDDEEF00825DE8 /* HistoryViewController.xib in Resources */,
 				B0F0FA0A27F337F200874BCF /* NunitoSans-Regular.ttf in Resources */,
+				121295702803D2460015719C /* TransferViewController.xib in Resources */,
 				B0F4E5C327FDC4080053CE3B /* DashboardCell.xib in Resources */,
 				B0F0F9F827F3342D00874BCF /* Main.storyboard in Resources */,
 				B0F0FA0827F337DD00874BCF /* NunitoSans-Bold.ttf in Resources */,
@@ -820,6 +845,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E9CEB927FDAED300247CEC /* RegisterViewProtocol.swift in Sources */,
+				121295712803D2460015719C /* TransferInteractorProtocol.swift in Sources */,
 				B0F4E5D527FDCAD70053CE3B /* BalanceNetworkManager.swift in Sources */,
 				B0D2D3C827FDD0BA0048761D /* IntExtension.swift in Sources */,
 				B088085427F55666009E35B8 /* LoginViewProtocol.swift in Sources */,
@@ -834,28 +860,24 @@
 				B0D2D3CA27FDD0F80048761D /* UIViewExtension.swift in Sources */,
 				B0F4E5C727FDC5940053CE3B /* HomeDataSource.swift in Sources */,
 				B02C583C27FAD2B100C9EA0B /* AppRouter.swift in Sources */,
+				1212956B2803D2460015719C /* TransferDataResponse.swift in Sources */,
 				B0F4E5AD27FDBF100053CE3B /* HomeInteractor.swift in Sources */,
-				B0FDBFBD27FEC6C700F4895C /* TransferPresenterProtocol.swift in Sources */,
+				1212956F2803D2460015719C /* TransferView.swift in Sources */,
 				B01E55C227F96C0500949205 /* LoginRouterImpl.swift in Sources */,
+				121295732803D2460015719C /* TransferInteractorOutput.swift in Sources */,
 				B01E55B827F952C300949205 /* LoginPresenterImpl.swift in Sources */,
-
 				12E9CEB727FDAD8900247CEC /* RegisterPresenterImpl.swift in Sources */,
-
-				B0FDBFCE27FECF3C00F4895C /* TransferInteractorOutput.swift in Sources */,
-
 				B0F4E5B627FDBFDE0053CE3B /* HomePresenter.swift in Sources */,
-				B030919127FFDD7E00201E38 /* TransferPresenterImpl.swift in Sources */,
-				B030919327FFDDEE00201E38 /* TransferRouterImpl.swift in Sources */,
+				121295752803D2460015719C /* TransferRouterProtocol.swift in Sources */,
 				B0F4E5E627FDCCD40053CE3B /* InvoiceNetworkManager.swift in Sources */,
 				B04F665227FDE17100825DE8 /* HistoryRouter.swift in Sources */,
 				B0FDBFC627FEC75A00F4895C /* TransferNetworkManager.swift in Sources */,
 				B0F4E5DC27FDCB720053CE3B /* GetBalanceResponse.swift in Sources */,
 				B0FDBFC827FEC77800F4895C /* TransferNetworkManagerImpl.swift in Sources */,
-				B0FDBFBF27FEC6E400F4895C /* TransferInteractorProtocol.swift in Sources */,
+				1212956E2803D2460015719C /* TransferViewController.swift in Sources */,
 				B0F4E5BB27FDC04B0053CE3B /* DashboardCellDelegate.swift in Sources */,
 				B0F4E5D727FDCAFD0053CE3B /* BalanceNetworkManagerImpl.swift in Sources */,
 				B04F664B27FDE0D900825DE8 /* HistoryInteractor.swift in Sources */,
-				B0FDBFC127FEC6F700F4895C /* TransferRouterProtocol.swift in Sources */,
 				B0F4E5AF27FDBF490053CE3B /* HomeInteractorImpl.swift in Sources */,
 				B0F4E5E027FDCC9D0053CE3B /* GetInvoiceDataResponse.swift in Sources */,
 				B0F4E5E227FDCCB30053CE3B /* GetInvoiceResponse.swift in Sources */,
@@ -872,11 +894,7 @@
 				12E9CEB127FDA9C600247CEC /* RegisterInteractorImpl.swift in Sources */,
 				12632F5727FDEF4000CBDC9F /* RegisterEntity.swift in Sources */,
 				B01E55B627F9523B00949205 /* LoginPresenterProtocol.swift in Sources */,
-
 				1279EAF427FD79D20037C8A7 /* RegisterViewController.swift in Sources */,
-
-				B0FDBFCA27FEC96B00F4895C /* TransferDataResponse.swift in Sources */,
-
 				B0F4E5C527FDC5620053CE3B /* HomeView.swift in Sources */,
 				B0F4E5E427FDCCC50053CE3B /* InvoiceApi.swift in Sources */,
 				B0F4E5A727FDBE830053CE3B /* HomeRouterImpl.swift in Sources */,
@@ -885,13 +903,16 @@
 				B0F0FA0527F3350700874BCF /* LoginViewController2.swift in Sources */,
 				B0F0F9F527F3342D00874BCF /* ViewController.swift in Sources */,
 				12E9CEB527FDAD7500247CEC /* RegisterPresenterProtocol.swift in Sources */,
+				121295742803D2460015719C /* TransferRouterImpl.swift in Sources */,
 				B02C583E27FAD56600C9EA0B /* AppConstant.swift in Sources */,
 				B0C62DF327F9F23A00B1732D /* UserDefaultHelper.swift in Sources */,
 				B00DA4A827F6D37E00256682 /* LoginDataResponse.swift in Sources */,
 				12E9CEAD27FDA6AC00247CEC /* RegisterRouterProtocol.swift in Sources */,
+				1212956C2803D2460015719C /* TransferPresenterImpl.swift in Sources */,
 				B01E55C027F95CD200949205 /* LoginInteractorImpl.swift in Sources */,
 				B0F0F9F127F3342D00874BCF /* AppDelegate.swift in Sources */,
 				12E9CEAF27FDA9B000247CEC /* RegisterInteractorProtocol.swift in Sources */,
+				1212956D2803D2460015719C /* TransferPresenterProtocol.swift in Sources */,
 				12E9CEB327FDAB2500247CEC /* RegisterInteractorOutput.swift in Sources */,
 				12E9CEAB27FDA69300247CEC /* RegisterRouterImpl.swift in Sources */,
 				B01E55C027F95CD200949205 /* LoginInteractorImpl.swift in Sources */,
@@ -900,10 +921,10 @@
 				B01228BC27F43F41009D7F98 /* LoginViewController.swift in Sources */,
 				B0F0F9F327F3342D00874BCF /* SceneDelegate.swift in Sources */,
 				B0F4E5CE27FDC7680053CE3B /* HomeViewController.swift in Sources */,
+				121295722803D2460015719C /* TransferInteractorImpl.swift in Sources */,
 				B01E55BC27F953D800949205 /* LoginRouterProtocol.swift in Sources */,
 				B04F665027FDE15F00825DE8 /* HistoryRouterImpl.swift in Sources */,
 				B04F664627FDE07900825DE8 /* HistoryPresenter.swift in Sources */,
-				B0FDBFCC27FECE9B00F4895C /* TransferInteractorImpl.swift in Sources */,
 				B0F4E5B427FDBFBC0053CE3B /* HomePresenterImpl.swift in Sources */,
 				B01E55BA27F953BF00949205 /* LoginInteractorProtocol.swift in Sources */,
 			);
@@ -1059,6 +1080,7 @@
 				INFOPLIST_FILE = zwallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1087,6 +1109,7 @@
 				INFOPLIST_FILE = zwallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1127,6 +1150,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		121295762803D5C90015719C /* XCRemoteSwiftPackageReference "netfox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kasketis/netfox.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		B0BA5C1227F6A74A005DAC02 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya";
@@ -1146,6 +1177,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		121295772803D5C90015719C /* netfox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 121295762803D5C90015719C /* XCRemoteSwiftPackageReference "netfox" */;
+			productName = netfox;
+		};
 		B00DA4A227F6AB7D00256682 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B0BA5C1227F6A74A005DAC02 /* XCRemoteSwiftPackageReference "Moya" */;

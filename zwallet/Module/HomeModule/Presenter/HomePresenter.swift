@@ -12,5 +12,6 @@ protocol HomePresenter {
     func loadProfile()
     func loadTransaction()
     func showHistory(viewController: UIViewController)
+    func showTransfer(viewController: UIViewController)
     func logout()
 }

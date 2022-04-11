@@ -31,6 +31,10 @@ class HomePresenterImpl: HomePresenter {
     func loadTransaction() {
         self.interactor.getTransaction()
     }
+    
+    func showTransfer(viewController: UIViewController) {
+        self.router.navigateToTransfer(viewController: viewController)
+    }
 
     func logout() {
         UserDefaultHelper.shared.remove(key: .userToken)
